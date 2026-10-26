@@ -22,6 +22,16 @@ pip install -e .
 pip install pytest
 ```
 
+## Running the Game
+
+Launch the interactive terminal dashboard:
+
+```bash
+mastermind
+# or
+python -m mastermind.ui.app
+```
+
 ## Running Tests
 
 Execute the unit and integration test suite:
