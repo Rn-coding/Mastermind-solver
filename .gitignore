@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / IDE artifacts
+.vscode/
+.idea/
+
+# Course-specific internal specifications (excluded from public GitHub repo)
+AGENT.md
+ARCHITECTURE.md
+
+# Agent and tool scratch
+.gemini/
+scratch/

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mastermind-ai"
+version = "0.1.0"
+description = "Adaptive problem-solving AI for Mastermind with search, belief-state reasoning, and adversarial analysis"
+readme = "README.md"
+authors = [{ name = "Rehan" }]
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
