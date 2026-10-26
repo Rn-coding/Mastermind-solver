@@ -15,7 +15,11 @@ from mastermind.setters.fixed import RandomFixedSetter
 from mastermind.solver.belief_state import BeliefState
 from mastermind.solver.budget import SearchBudget
 from mastermind.solver.candidates import CandidateGenerator, GuessFilterPolicy
-from mastermind.solver.heuristic import AnytimeEntropyHeuristic, analyze_guess_partitions
+from mastermind.solver.heuristic import (
+    AnytimeEntropyHeuristic,
+    AsyncAnytimeWorker,
+    analyze_guess_partitions,
+)
 from mastermind.ui.formatters import parse_guess_input
 from mastermind.ui.game_view import (
     render_ai_hint,
@@ -67,7 +71,7 @@ class MastermindApp:
         max_guesses = max_guesses_in if max_guesses_in > 0 else None
 
         seed_str = Prompt.ask("Random seed for secret (leave blank for random)", default="", console=self.console).strip()
-        seed = int(seed_str) if seed_str.isdigit() else None
+        seed = int(seed_str) if seed_str.isdigit() else (seed_str if seed_str else None)
 
         try:
             return GameConfig(
@@ -232,27 +236,55 @@ class MastermindApp:
         while not env.is_terminal:
             if ai_player is not None:
                 if mode == "3":
-                    while True:
-                        prompt_label = (
-                            f"\n[bold cyan]Turn {env.turn_number + 1}[/bold cyan] "
-                            f"Press Enter for AI move (or 'eval', 'inspect', 'timeline <sec>', 'top', 'q')"
+                    obs = env.get_observation()
+                    if obs.turn_number == 0 and ai_player._use_first_guess_canonical:
+                        guess = ai_player.choose_guess(obs)
+                    else:
+                        cand_gen = CandidateGenerator(config)
+                        guesses = cand_gen.generate_candidate_guesses(
+                            belief_state,
+                            policy=GuessFilterPolicy.ALL_LEGAL_CODES,
+                            max_guesses=ai_player._budget.max_candidate_guesses,
                         )
-                        step = Prompt.ask(prompt_label, default="", console=self.console).strip()
-                        if not step:
-                            break
-                        if step.lower() in ("q", "quit", "exit"):
-                            self.console.print("[yellow]AI session aborted by user.[/yellow]")
-                            return False
-                        if self.handle_interactive_command(step, env, belief_state):
-                            # Ensure AI player budget reflects any timeline change
-                            ai_player._budget.max_time_seconds = self.ai_timeline
-                            continue
-                        self.console.print("[dim]Press Enter to proceed with AI move, or type 'help'[/dim]")
+                        heuristic = AnytimeEntropyHeuristic(
+                            timeline_seconds=self.ai_timeline,
+                            max_memory_mb=ai_player._budget.max_memory_mb or 512.0,
+                        )
+                        # Launch asynchronous background search immediately
+                        worker = AsyncAnytimeWorker(
+                            heuristic=heuristic,
+                            guesses=guesses,
+                            belief_state=belief_state,
+                            timeline_seconds=self.ai_timeline,
+                        )
+                        self.console.print(
+                            f"[dim cyan]AI is evaluating candidates in the background (timeline {self.ai_timeline:.1f}s)...[/dim cyan]"
+                        )
+
+                        while True:
+                            status_tag = "[bold green]Ready[/]" if worker.is_finished else "[yellow]Computing...[/]"
+                            prompt_label = (
+                                f"[bold cyan]Turn {env.turn_number + 1}[/bold cyan] ({status_tag}) "
+                                f"Press Enter to play move (or 'eval', 'inspect', 'timeline <sec>', 'top', 'q')"
+                            )
+                            step = Prompt.ask(prompt_label, default="", console=self.console).strip()
+                            if not step:
+                                result_obj = worker.stop_and_get_result()
+                                guess = result_obj.guess
+                                ai_player._last_result = result_obj
+                                break
+                            if step.lower() in ("q", "quit", "exit"):
+                                worker.stop_and_get_result()
+                                self.console.print("[yellow]AI session aborted by user.[/yellow]")
+                                return False
+                            if self.handle_interactive_command(step, env, belief_state):
+                                ai_player._budget.max_time_seconds = self.ai_timeline
+                                continue
+                            self.console.print("[dim]Press Enter to proceed with AI move, or type 'help'[/dim]")
                 else:
                     time.sleep(0.4)
-
-                obs = env.get_observation()
-                guess = ai_player.choose_guess(obs)
+                    obs = env.get_observation()
+                    guess = ai_player.choose_guess(obs)
             else:
                 guess = self.prompt_human_guess(env, belief_state)
                 if guess is None:

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 import random
-from typing import Optional, Sequence
+from typing import Optional, Sequence, Union
 from mastermind.config import GameConfig
 from mastermind.observation import Code, Feedback
 from mastermind.rules import calculate_feedback, validate_code
@@ -31,7 +31,7 @@ class KnownFixedSetter(BaseSetter):
 class RandomFixedSetter(BaseSetter):
     """Setter that randomly generates a secret code at initialization."""
 
-    def __init__(self, seed: Optional[int] = None) -> None:
+    def __init__(self, seed: Optional[Union[int, str]] = None) -> None:
         self._seed = seed
         self._secret: Optional[Code] = None
         self._config: Optional[GameConfig] = None

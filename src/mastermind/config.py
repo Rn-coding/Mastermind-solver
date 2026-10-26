@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import Optional, Sequence
+from typing import Optional, Sequence, Union
 
 DEFAULT_COLOR_NAMES = ("Red", "Green", "Blue", "Yellow", "Orange", "Purple", "Cyan", "Magenta")
 
@@ -16,7 +16,7 @@ class GameConfig:
         num_colors: Number of distinct colors available (represented as integers 0..num_colors-1).
         allow_repeats: Whether colors may be repeated in a code.
         max_guesses: Optional maximum allowed guesses before the game terminates. None means unlimited.
-        seed: Optional random seed for reproducible secret generation.
+        seed: Optional random seed for reproducible secret generation (int or string).
         color_names: Optional sequence of friendly color display names.
     """
 
@@ -24,7 +24,7 @@ class GameConfig:
     num_colors: int = 6
     allow_repeats: bool = True
     max_guesses: Optional[int] = 10
-    seed: Optional[int] = None
+    seed: Optional[Union[int, str]] = None
     color_names: Optional[Sequence[str]] = None
 
     def __post_init__(self) -> None:

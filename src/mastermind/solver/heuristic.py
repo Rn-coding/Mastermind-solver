@@ -4,6 +4,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 import math
+import threading
 import time
 from typing import Callable, Dict, List, Optional, Sequence, Tuple
 from mastermind.observation import Code, Feedback
@@ -401,6 +402,7 @@ class AnytimeEntropyHeuristic(BaseHeuristic):
         belief_state: BeliefState,
         max_time_seconds: Optional[float] = None,
         deadline: Optional[float] = None,
+        stop_event: Optional[threading.Event] = None,
     ) -> SolverResult:
         start_time = time.perf_counter()
         effective_timeline = max_time_seconds or self.timeline_seconds
@@ -435,6 +437,16 @@ class AnytimeEntropyHeuristic(BaseHeuristic):
 
         for idx, guess in enumerate(guesses_to_eval):
             now = time.perf_counter()
+
+            # External stop event (e.g. user pressed Enter to proceed)
+            if stop_event and stop_event.is_set() and idx > 0:
+                budget_exhausted = True
+                stopping_reason = (
+                    f"User proceeded after {(now - start_time):.2f}s. "
+                    f"Applied best guess evaluated so far with maximum entropy ({best_entropy:.3f} bits)."
+                )
+                break
+
             # Time check
             if now >= effective_deadline and idx > 0:
                 budget_exhausted = True
@@ -498,3 +510,48 @@ class AnytimeEntropyHeuristic(BaseHeuristic):
         )
 
         return SolverResult(guess=selected, telemetry=telemetry)
+
+
+class AsyncAnytimeWorker:
+    """Manages asynchronous background execution of anytime search during user think time."""
+
+    def __init__(
+        self,
+        heuristic: AnytimeEntropyHeuristic,
+        guesses: Sequence[Code],
+        belief_state: BeliefState,
+        timeline_seconds: float = 2.0,
+    ) -> None:
+        self.heuristic = heuristic
+        self.guesses = guesses
+        self.belief_state = belief_state
+        self.timeline_seconds = timeline_seconds
+        self._stop_event = threading.Event()
+        self._result: Optional[SolverResult] = None
+        self._thread = threading.Thread(target=self._run, daemon=True)
+        self._thread.start()
+
+    def _run(self) -> None:
+        self._result = self.heuristic.select_best_guess(
+            self.guesses,
+            self.belief_state,
+            max_time_seconds=self.timeline_seconds,
+            stop_event=self._stop_event,
+        )
+
+    @property
+    def is_finished(self) -> bool:
+        """Whether background calculation has completed or timed out."""
+        return self._result is not None or not self._thread.is_alive()
+
+    def stop_and_get_result(self, timeout: float = 1.0) -> SolverResult:
+        """Halt background search immediately and return best anytime result calculated so far."""
+        self._stop_event.set()
+        self._thread.join(timeout=timeout)
+        if self._result is not None:
+            return self._result
+        # Fallback if interrupted before 1st evaluation completes
+        return self.heuristic.select_best_guess(
+            self.guesses[:1],
+            self.belief_state,
+        )

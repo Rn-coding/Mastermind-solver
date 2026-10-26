@@ -6,7 +6,7 @@ from rich.console import Console
 from mastermind.config import GameConfig
 from mastermind.environment import MastermindEnvironment
 from mastermind.observation import Observation
-from mastermind.setters.fixed import KnownFixedSetter
+from mastermind.setters.fixed import KnownFixedSetter, RandomFixedSetter
 from mastermind.solver.belief_state import BeliefState
 from mastermind.solver.candidates import CandidateGenerator, get_theoretical_space_size
 from mastermind.solver.heuristic import (
@@ -83,8 +83,8 @@ class TestLargeStateSpaceGuardrails:
         assert get_theoretical_space_size(cfg_perm) == 360
 
     def test_large_state_space_belief_state_sampling(self):
-        # 6 pegs, 10 colors = 1,000,000 codes
-        cfg = GameConfig(num_pegs=6, num_colors=10, allow_repeats=True)
+        # 7 pegs, 10 colors = 10,000,000 codes (> 2,000,000)
+        cfg = GameConfig(num_pegs=7, num_colors=10, allow_repeats=True)
         bs = BeliefState(cfg)
 
         assert bs.is_sampled is True
@@ -92,8 +92,8 @@ class TestLargeStateSpaceGuardrails:
         assert bs.size <= 2500  # Bounded in RAM
 
         # Test filtering on large space
-        guess = (0, 1, 2, 3, 4, 5)
-        setter = KnownFixedSetter(secret=(0, 1, 2, 3, 4, 5), config=cfg)
+        guess = (0, 1, 2, 3, 4, 5, 6)
+        setter = KnownFixedSetter(secret=(0, 1, 2, 3, 4, 5, 6), config=cfg)
         fb = setter.evaluate_guess(guess)
         new_size = bs.filter_by_turn(guess, fb)
         assert new_size > 0
@@ -154,3 +154,67 @@ class TestInteractiveUICommands:
         assert handled is True
         out = console.export_text()
         assert "Top Candidate Guesses" in out
+
+    def test_eval_table_no_broken_bold_tags(self, app_and_env):
+        app, env, bs, console = app_and_env
+        analysis = analyze_guess_partitions((0, 1, 2), bs)
+        panel = render_detailed_guess_eval(analysis, bs.config)
+        test_console = Console(record=True, width=120)
+        test_console.print(panel)
+        text = test_console.export_text()
+        # Verify that '[bold' does not appear as raw leaked text
+        assert "[bold" not in text
+        assert "Feedback Distribution" in text
+
+
+class TestFixesAndBackgroundWorker:
+    def test_string_seed_determinism(self):
+        config1 = GameConfig(num_pegs=4, num_colors=6, seed="abc")
+        setter1 = RandomFixedSetter(seed=config1.seed)
+        setter1.initialize(config1)
+
+        config2 = GameConfig(num_pegs=4, num_colors=6, seed="abc")
+        setter2 = RandomFixedSetter(seed=config2.seed)
+        setter2.initialize(config2)
+
+        assert setter1.reveal_secret() == setter2.reveal_secret()
+
+    def test_user_reported_no_repeats_large_setup(self):
+        # Exact configuration from user: 8 pegs, 10 colors, allow_repeats=False, seed="abc"
+        config = GameConfig(num_pegs=8, num_colors=10, allow_repeats=False, seed="abc")
+        setter = RandomFixedSetter(seed=config.seed)
+        setter.initialize(config)
+        secret = setter.reveal_secret()
+        assert len(secret) == 8
+        assert len(set(secret)) == 8
+
+        env = MastermindEnvironment(config=config, setter=setter)
+        belief_state = BeliefState(config)
+        # Verify that 1,814,400 permutation space initializes properly
+        assert belief_state.size == 1_814_400
+
+        # Turn 1
+        g1 = (0, 1, 2, 3, 4, 5, 6, 7)
+        res1 = env.submit_guess(g1)
+        # Should filter without raising InconsistentHistoryError
+        new_size = belief_state.filter_by_turn(g1, res1.feedback)
+        assert new_size > 0
+        assert belief_state.contains(secret) is True
+
+    def test_async_anytime_worker(self):
+        from mastermind.solver.heuristic import AsyncAnytimeWorker
+        config = GameConfig(num_pegs=3, num_colors=3)
+        bs = BeliefState(config)
+        heuristic = AnytimeEntropyHeuristic(timeline_seconds=1.5)
+        guesses = [(0, 1, 2), (0, 0, 0), (1, 1, 1)]
+
+        worker = AsyncAnytimeWorker(
+            heuristic=heuristic,
+            guesses=guesses,
+            belief_state=bs,
+            timeline_seconds=1.5,
+        )
+        # Worker runs in background
+        res = worker.stop_and_get_result(timeout=1.0)
+        assert res.guess is not None
+        assert res.telemetry.nodes_evaluated > 0

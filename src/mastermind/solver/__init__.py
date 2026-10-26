@@ -7,6 +7,7 @@ from mastermind.solver.exact import ExactObjective, ExactPolicySolver
 from mastermind.solver.expectimax import BoundedExpectimaxSolver
 from mastermind.solver.heuristic import (
     AnytimeEntropyHeuristic,
+    AsyncAnytimeWorker,
     DetailedGuessAnalysis,
     EntropyHeuristic,
     ExpectedSizeHeuristic,
@@ -28,6 +29,7 @@ __all__ = [
     "StrategySelector",
     "WorkloadProfile",
     "AnytimeEntropyHeuristic",
+    "AsyncAnytimeWorker",
     "DetailedGuessAnalysis",
     "PartitionOutcome",
     "analyze_guess_partitions",

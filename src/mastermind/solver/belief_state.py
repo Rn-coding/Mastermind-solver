@@ -9,7 +9,7 @@ from mastermind.config import GameConfig
 from mastermind.observation import Code, Feedback, Observation, TurnRecord
 from mastermind.rules import calculate_feedback, generate_all_codes
 
-MAX_EXPLICIT_SPACE = 50000
+MAX_EXPLICIT_SPACE = 2000000
 SAMPLE_POOL_SIZE = 2500
 
 
@@ -81,15 +81,17 @@ class BeliefState:
         self,
         history: Sequence[TurnRecord],
         max_samples: int = SAMPLE_POOL_SIZE,
-        max_attempts: int = 50000,
+        max_attempts: int = 25000,
     ) -> List[Code]:
-        """Sample random codes that satisfy all history constraints."""
-        rng = random.Random(self._config.seed or 42)
+        """Sample codes that satisfy all history constraints using rejection & CSP hill-climbing."""
+        effective_seed = self._config.seed if isinstance(self._config.seed, (int, str)) else 42
+        rng = random.Random(effective_seed)
         colors = list(range(self._config.num_colors))
         valid_candidates: Set[Code] = set()
 
+        # Phase 1: Fast rejection sampling for weak constraints
         attempts = 0
-        while len(valid_candidates) < max_samples and attempts < max_attempts:
+        while len(valid_candidates) < max_samples and attempts < min(5000, max_attempts):
             attempts += 1
             if self._config.allow_repeats:
                 candidate = tuple(rng.choices(colors, k=self._config.num_pegs))
@@ -99,17 +101,63 @@ class BeliefState:
             if candidate in valid_candidates:
                 continue
 
-            # Check consistency with all previous turns
-            consistent = True
-            for record in history:
-                if calculate_feedback(candidate, record.guess) != record.feedback:
-                    consistent = False
-                    break
-
-            if consistent:
+            if all(calculate_feedback(candidate, rec.guess) == rec.feedback for rec in history):
                 valid_candidates.add(candidate)
 
+        # Phase 2: If constraints are tight, deploy stochastic min-conflicts hill climbing
+        if len(valid_candidates) < max_samples and history:
+            target_needed = max_samples - len(valid_candidates)
+            for _ in range(target_needed * 3):
+                if len(valid_candidates) >= max_samples:
+                    break
+                cand = self._solve_csp_candidate(history, rng, colors)
+                if cand:
+                    valid_candidates.add(cand)
+
         return list(valid_candidates)
+
+    def _solve_csp_candidate(
+        self,
+        history: Sequence[TurnRecord],
+        rng: random.Random,
+        colors: List[int],
+        max_restarts: int = 20,
+        max_steps: int = 100,
+    ) -> Optional[Code]:
+        """Find a consistent candidate code using min-conflicts stochastic hill-climbing."""
+        num_pegs = self._config.num_pegs
+        num_colors = self._config.num_colors
+
+        for _ in range(max_restarts):
+            if self._config.allow_repeats:
+                c = list(rng.choices(colors, k=num_pegs))
+            else:
+                c = rng.sample(colors, k=num_pegs)
+
+            for _ in range(max_steps):
+                c_tuple = tuple(c)
+                # Compute conflict score
+                conflict = sum(
+                    abs(calculate_feedback(c_tuple, rec.guess).exact - rec.feedback.exact)
+                    + abs(calculate_feedback(c_tuple, rec.guess).misplaced - rec.feedback.misplaced)
+                    for rec in history
+                )
+                if conflict == 0:
+                    return c_tuple
+
+                # Stochastic perturbation
+                if self._config.allow_repeats:
+                    idx = rng.randrange(num_pegs)
+                    c[idx] = rng.choice(colors)
+                else:
+                    i, j = rng.sample(range(num_pegs), 2)
+                    if rng.random() < 0.5 and num_colors > num_pegs:
+                        unused = [col for col in colors if col not in c]
+                        c[i] = rng.choice(unused)
+                    else:
+                        c[i], c[j] = c[j], c[i]
+
+        return None
 
     def filter_by_turn(self, guess: Code, feedback: Feedback) -> int:
         """Filter current candidates against a single guess and feedback observation.

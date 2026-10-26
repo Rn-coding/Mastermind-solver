@@ -72,13 +72,18 @@ def calculate_feedback(secret: Sequence[int], guess: Sequence[int]) -> Feedback:
     if not secret_unmatched:
         return Feedback(exact=exact, misplaced=0)
 
-    secret_counts = Counter(secret_unmatched)
-    guess_counts = Counter(guess_unmatched)
+    s_counts: Dict[int, int] = {}
+    for x in secret_unmatched:
+        s_counts[x] = s_counts.get(x, 0) + 1
+
+    g_counts: Dict[int, int] = {}
+    for y in guess_unmatched:
+        g_counts[y] = g_counts.get(y, 0) + 1
 
     misplaced = sum(
-        min(secret_counts[color], guess_counts[color])
-        for color in secret_counts
-        if color in guess_counts
+        min(s_counts[color], g_counts[color])
+        for color in s_counts
+        if color in g_counts
     )
 
     return Feedback(exact=exact, misplaced=misplaced)

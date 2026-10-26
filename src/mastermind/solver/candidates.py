@@ -10,7 +10,7 @@ from mastermind.observation import Code
 from mastermind.rules import generate_all_codes
 from mastermind.solver.belief_state import BeliefState
 
-MAX_EXPLICIT_SPACE = 50000
+MAX_EXPLICIT_SPACE = 2000000
 
 
 def get_theoretical_space_size(config: GameConfig) -> int:

@@ -219,11 +219,18 @@ def render_detailed_guess_eval(analysis: DetailedGuessAnalysis, config: GameConf
     table.add_column("Distribution", justify="left", ratio=2)
 
     for outcome in analysis.outcomes:
-        fb_pegs = format_feedback(outcome.feedback, config.num_pegs)
+        exact_pegs = " ".join(["[bold red]●[/]"] * outcome.feedback.exact)
+        misplaced_pegs = " ".join(["[bold white]○[/]"] * outcome.feedback.misplaced)
+        empty_count = max(0, config.num_pegs - outcome.feedback.exact - outcome.feedback.misplaced)
+        empty_pegs = " ".join(["[dim]·[/]"] * empty_count)
+        pegs_str = " ".join(filter(bool, [exact_pegs, misplaced_pegs, empty_pegs]))
+        if not pegs_str:
+            pegs_str = "[dim]·[/dim]"
+
         bar_len = int(outcome.percentage / 4)
         bar = "█" * bar_len + "░" * (25 - bar_len)
         table.add_row(
-            fb_pegs.split()[0] if fb_pegs.strip() else "[dim]·[/dim]",
+            pegs_str,
             str(outcome.feedback.exact),
             str(outcome.feedback.misplaced),
             str(outcome.count),
