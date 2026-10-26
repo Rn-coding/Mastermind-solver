@@ -1,0 +1,871 @@
+experiment_name,strategy_name,trial_id,turn,guess,exact_pegs,misplaced_pegs,candidates_remaining,entropy_bits,nodes_evaluated,elapsed_time_ms,method_name,is_exact
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),1,1,002,0,1,4,0.0,338,119.47,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),1,2,121,1,1,1,0.0,5,1.58,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),1,3,110,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),2,1,002,1,1,4,0.0,338,119.26,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),2,2,010,1,1,1,0.0,1,0.48,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),2,3,021,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),3,1,002,1,0,6,0.0,338,115.74,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),3,2,101,0,1,1,0.0,10,3.15,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),3,3,212,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),4,1,002,0,1,4,0.0,338,118.62,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),4,2,121,3,0,1,0.0,5,1.67,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),5,1,002,1,2,2,0.0,338,121.17,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),5,2,020,3,0,1,0.0,0,0.11,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),6,1,002,0,1,4,0.0,338,118.66,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),6,2,121,1,1,1,0.0,5,1.58,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),6,3,110,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),7,1,002,1,2,2,0.0,338,117.24,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),7,2,020,1,2,1,0.0,0,0.1,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),7,3,200,3,0,1,0.0,0,0.07,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),8,1,002,1,1,4,0.0,338,117.65,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),8,2,010,0,2,1,0.0,1,0.48,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),8,3,201,3,0,1,0.0,0,0.07,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),9,1,002,1,0,6,0.0,338,118.57,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),9,2,101,0,0,1,0.0,10,3.18,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),9,3,222,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),10,1,002,0,0,1,0.0,338,118.51,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),10,2,111,3,0,1,0.0,0,0.1,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),11,1,002,1,0,6,0.0,338,118.39,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),11,2,101,0,1,1,0.0,10,3.15,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),11,3,212,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),12,1,002,1,0,6,0.0,338,119.1,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),12,2,101,0,1,1,0.0,10,3.24,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),12,3,212,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),13,1,002,1,2,2,0.0,338,119.57,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),13,2,020,1,2,1,0.0,0,0.11,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),13,3,200,3,0,1,0.0,0,0.07,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),14,1,002,0,2,3,0.0,338,119.48,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),14,2,120,3,0,1,0.0,1,0.41,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),15,1,002,1,0,6,0.0,338,118.62,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),15,2,101,1,0,1,0.0,10,3.15,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),15,3,122,3,0,1,0.0,0,0.08,Exact Tree Search (expected_total_guesses),True
+Exact Reference Benchmark,Shannon Entropy,1,1,100,2,0,6,2.763,27,2.14,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,1,2,102,1,1,2,2.252,27,0.69,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,1,3,110,3,0,1,1.0,2,0.11,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,2,1,100,0,2,3,2.763,27,2.07,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,2,2,012,1,2,1,1.585,27,0.42,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,2,3,021,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,3,1,100,0,1,4,2.763,27,2.09,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,3,2,212,3,0,1,2.0,27,0.49,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,4,1,100,1,0,6,2.763,27,2.06,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,4,2,202,0,1,1,2.585,27,0.64,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,4,3,121,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,5,1,100,1,1,4,2.763,27,2.05,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,5,2,002,1,2,1,2.0,27,0.5,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,5,3,020,3,0,1,0.0,1,0.07,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,6,1,100,2,0,6,2.763,27,2.04,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,6,2,102,1,1,2,2.252,27,0.65,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,6,3,110,3,0,1,1.0,2,0.1,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,7,1,100,2,0,6,2.763,27,2.08,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,7,2,102,1,1,2,2.252,27,0.65,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,7,3,110,1,0,1,1.0,2,0.11,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,7,4,200,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,8,1,100,1,1,4,2.763,27,2.06,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,8,2,002,1,1,1,2.0,27,0.5,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,8,3,201,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,9,1,100,0,0,1,2.763,27,2.06,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,9,2,222,3,0,1,0.0,1,0.07,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,10,1,100,1,0,6,2.763,27,2.06,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,10,2,202,0,0,1,2.585,27,0.64,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,10,3,111,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,11,1,100,0,1,4,2.763,27,2.06,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,11,2,212,3,0,1,2.0,27,0.55,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,12,1,100,0,1,4,2.763,27,2.09,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,12,2,212,3,0,1,2.0,27,0.49,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,13,1,100,2,0,6,2.763,27,2.07,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,13,2,102,1,1,2,2.252,27,0.65,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,13,3,110,1,0,1,1.0,2,0.11,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,13,4,200,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,14,1,100,2,0,6,2.763,27,2.08,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,14,2,102,1,2,1,2.252,27,0.65,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,14,3,120,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Shannon Entropy,15,1,100,1,0,6,2.763,27,2.08,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,15,2,202,1,1,1,2.585,27,0.64,Shannon Entropy (Information Gain),False
+Exact Reference Benchmark,Shannon Entropy,15,3,122,3,0,1,0.0,1,0.08,Shannon Entropy (Information Gain),True
+Exact Reference Benchmark,Knuth Minimax,1,1,001,0,2,3,0.0,27,2.13,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,1,2,120,2,0,1,0.0,27,0.43,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,1,3,110,3,0,1,0.0,1,0.07,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,2,1,001,2,0,6,0.0,27,2.06,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,2,2,002,1,1,2,0.0,27,0.64,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,2,3,021,3,0,1,0.0,2,0.1,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,3,1,001,0,1,4,0.0,27,2.05,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,3,2,122,1,2,1,0.0,27,0.49,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,3,3,212,3,0,1,0.0,1,0.08,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,4,1,001,1,0,6,0.0,27,2.06,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,4,2,022,1,0,1,0.0,27,0.64,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,4,3,121,3,0,1,0.0,1,0.08,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,5,1,001,1,1,4,0.0,27,2.06,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,5,2,012,1,1,1,0.0,27,0.49,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,5,3,020,3,0,1,0.0,1,0.07,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,6,1,001,0,2,3,0.0,27,2.07,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,6,2,120,2,0,1,0.0,27,0.42,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,6,3,110,3,0,1,0.0,1,0.07,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,7,1,001,1,1,4,0.0,27,2.72,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,7,2,012,0,2,1,0.0,27,0.48,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,7,3,200,3,0,1,0.0,1,0.07,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,8,1,001,2,0,6,0.0,27,2.01,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,8,2,002,1,1,2,0.0,27,0.64,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,8,3,021,1,2,1,0.0,2,0.1,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,8,4,201,3,0,1,0.0,1,0.08,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,9,1,001,0,0,1,0.0,27,2.03,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,9,2,222,3,0,1,0.0,1,0.07,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,10,1,001,1,0,6,0.0,27,2.02,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,10,2,022,0,0,1,0.0,27,0.63,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,10,3,111,3,0,1,0.0,1,0.08,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,11,1,001,0,1,4,0.0,27,2.05,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,11,2,122,1,2,1,0.0,27,0.48,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,11,3,212,3,0,1,0.0,1,0.07,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,12,1,001,0,1,4,0.0,27,2.04,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,12,2,122,1,2,1,0.0,27,0.48,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,12,3,212,3,0,1,0.0,1,0.07,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,13,1,001,1,1,4,0.0,27,2.02,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,13,2,012,0,2,1,0.0,27,0.49,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,13,3,200,3,0,1,0.0,1,0.08,Knuth Minimax (Worst-Case),True
+Exact Reference Benchmark,Knuth Minimax,14,1,001,0,2,3,0.0,27,2.05,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,14,2,120,3,0,1,0.0,27,0.41,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,15,1,001,0,1,4,0.0,27,2.05,Knuth Minimax (Worst-Case),False
+Exact Reference Benchmark,Knuth Minimax,15,2,122,3,0,1,0.0,27,0.48,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Shannon Entropy,1,1,0011,0,1,256,2.885,1,7.24,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,1,2,1245,1,0,17,3.263,300,219.64,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,1,3,3202,4,0,1,3.337,300,20.34,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,2,1,0011,0,1,256,2.885,1,6.92,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,2,2,1245,1,2,33,3.263,300,213.9,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,2,3,1324,2,2,1,3.239,300,33.93,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,2,4,1423,4,0,1,0.0,1,3.8,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,3,1,0011,1,0,256,2.885,1,7.1,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,3,2,0245,2,0,18,3.263,300,212.04,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,3,3,3043,1,0,3,3.197,300,21.2,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,3,4,2241,3,0,1,1.585,300,8.14,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,3,5,4241,4,0,1,0.0,1,3.86,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,4,1,0011,0,0,256,2.885,1,7.02,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,4,2,2324,2,0,29,3.27,300,223.9,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,4,3,2552,2,2,1,3.289,300,41.73,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,4,4,2525,4,0,1,0.0,1,3.79,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,5,1,0011,1,1,208,2.885,1,9.09,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,5,2,0304,0,2,23,3.359,300,185.0,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,5,3,5411,2,1,2,3.154,300,27.05,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,5,4,1413,4,0,1,1.0,2,4.05,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,6,1,0011,0,1,256,2.885,1,7.17,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,6,2,1245,1,0,17,3.263,300,231.89,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,6,3,3202,4,0,1,3.337,300,20.85,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,7,1,0011,1,1,208,2.885,1,7.78,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,7,2,0304,2,1,13,3.359,300,182.53,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,7,3,2003,2,0,2,3.027,300,17.43,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,7,4,4004,3,0,1,1.0,2,4.0,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,7,5,5004,4,0,1,0.0,1,3.71,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,8,1,0011,0,2,96,2.885,1,7.96,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,8,2,1320,1,2,16,3.17,300,92.05,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,8,3,1204,0,3,3,3.031,300,19.75,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,8,4,3140,2,2,1,1.585,300,8.09,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,8,5,4130,4,0,1,0.0,1,3.51,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,9,1,0011,0,0,256,2.885,1,7.25,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,9,2,2324,1,0,18,3.27,300,253.88,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,9,3,5535,1,1,2,3.197,300,20.55,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,9,4,4554,2,2,1,1.0,2,3.81,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,9,5,5454,4,0,1,0.0,1,3.78,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,10,1,0011,0,0,256,2.885,1,7.3,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,10,2,2324,1,2,40,3.27,300,221.37,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,10,3,2433,1,3,2,3.209,300,40.01,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,10,4,3234,4,0,1,1.0,2,3.76,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,11,1,0011,0,0,256,2.885,1,7.09,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,11,2,2324,1,1,46,3.27,300,216.7,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,11,3,5225,2,0,3,3.455,300,45.91,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,11,4,4425,0,4,1,1.585,300,8.57,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,11,5,5244,4,0,1,0.0,1,3.76,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,12,1,0011,0,1,256,2.885,1,7.02,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,12,2,1245,2,0,18,3.263,300,246.64,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,12,3,4230,3,0,1,3.155,300,25.5,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,12,4,4240,4,0,1,0.0,1,4.01,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,13,1,0011,2,1,32,2.885,1,7.28,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,13,2,0112,0,2,3,3.144,300,37.13,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,13,3,5144,0,2,1,1.585,300,9.07,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,13,4,4001,4,0,1,0.0,1,3.17,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,14,1,0011,0,1,256,2.885,1,7.3,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,14,2,1245,0,2,51,3.263,300,221.67,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,14,3,3450,0,3,6,3.615,300,50.59,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,14,4,4302,1,2,1,2.585,300,10.94,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,14,5,2503,4,0,1,0.0,1,3.91,Shannon Entropy (Information Gain),True
+Strategy Matrix Comparison,Shannon Entropy,15,1,0011,0,1,256,2.885,1,7.41,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,15,2,1245,1,1,45,3.263,300,236.91,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,15,3,4203,0,3,3,3.421,300,48.86,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Shannon Entropy,15,4,3540,4,0,1,1.585,300,8.53,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Knuth Minimax,1,1,0011,0,1,256,0.0,1,7.14,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,1,2,1233,1,1,42,0.0,300,235.0,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,1,3,3403,2,0,3,0.0,300,50.62,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,1,4,2503,1,2,1,0.0,300,8.82,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,1,5,3202,4,0,1,0.0,1,3.77,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,2,1,0011,0,1,256,0.0,1,8.97,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,2,2,1233,2,1,13,0.0,300,230.81,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,2,3,5135,0,2,2,0.0,300,17.15,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,2,4,1343,2,1,1,0.0,2,3.73,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,2,5,1423,4,0,1,0.0,1,3.66,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,3,1,0011,1,0,256,0.0,1,7.55,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,3,2,0233,1,0,34,0.0,300,223.88,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,3,3,2214,1,2,4,0.0,300,34.45,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,3,4,4251,3,0,1,0.0,300,8.65,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,3,5,4241,4,0,1,0.0,1,3.77,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,4,1,0011,0,0,256,0.0,1,7.73,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,4,2,2234,1,1,46,0.0,300,226.86,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,4,3,2525,4,0,1,0.0,300,50.02,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,5,1,0011,1,1,208,0.0,1,7.28,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,5,2,0025,0,0,20,0.0,300,184.52,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,5,3,1313,3,0,3,0.0,300,21.96,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,5,4,1113,3,0,1,0.0,300,8.66,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,5,5,1413,4,0,1,0.0,1,3.95,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,6,1,0011,0,1,256,0.0,1,6.85,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,6,2,1233,1,1,42,0.0,300,226.28,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,6,3,3403,2,0,3,0.0,300,48.33,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,6,4,2503,1,2,1,0.0,300,8.43,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,6,5,3202,4,0,1,0.0,1,4.23,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,7,1,0011,1,1,208,0.0,1,7.29,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,7,2,0023,1,1,32,0.0,300,180.5,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,7,3,0405,1,3,2,0.0,300,33.79,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,7,4,0540,0,4,1,0.0,2,3.9,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,7,5,5004,4,0,1,0.0,1,3.72,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,8,1,0011,0,2,96,0.0,1,7.49,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,8,2,5540,1,1,18,0.0,300,90.96,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,8,3,1250,1,1,3,0.0,300,27.44,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,8,4,1145,1,1,1,0.0,300,8.07,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,8,5,4130,4,0,1,0.0,1,3.53,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,9,1,0011,0,0,256,0.0,1,6.97,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,9,2,2234,1,0,18,0.0,300,234.9,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,9,3,5352,2,0,3,0.0,300,21.59,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,9,4,5454,4,0,1,0.0,300,8.03,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,10,1,0011,0,0,256,0.0,1,6.91,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,10,2,2234,3,0,12,0.0,300,218.44,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,10,3,2533,1,2,2,0.0,300,15.65,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,10,4,3234,4,0,1,0.0,2,4.24,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,11,1,0011,0,0,256,0.0,1,7.21,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,11,2,2234,2,0,29,0.0,300,221.52,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,11,3,2255,1,1,4,0.0,300,30.37,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,11,4,2533,0,2,1,0.0,300,8.73,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,11,5,5244,4,0,1,0.0,1,3.69,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,12,1,0011,0,1,256,0.0,1,7.8,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,12,2,1233,1,0,34,0.0,300,233.38,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,12,3,2204,1,2,4,0.0,300,35.78,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,12,4,4250,3,0,1,0.0,300,9.19,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,12,5,4240,4,0,1,0.0,1,4.51,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,13,1,0011,2,1,32,0.0,1,6.77,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,13,2,0112,0,2,3,0.0,300,34.76,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,13,3,5024,1,1,1,0.0,300,7.41,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,13,4,4001,4,0,1,0.0,1,3.27,Knuth Minimax (Worst-Case),True
+Strategy Matrix Comparison,Knuth Minimax,14,1,0011,0,1,256,0.0,1,7.07,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,14,2,1233,1,1,42,0.0,300,224.6,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,14,3,3403,2,0,3,0.0,300,46.16,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,14,4,2503,4,0,1,0.0,300,7.94,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,15,1,0011,0,1,256,0.0,1,6.71,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,15,2,1233,0,1,44,0.0,300,250.93,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,15,3,2405,0,3,4,0.0,300,43.16,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Knuth Minimax,15,4,3540,4,0,1,0.0,300,9.04,Knuth Minimax (Worst-Case),False
+Strategy Matrix Comparison,Irving Expected Size,1,1,0011,0,1,256,0.0,1,7.64,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,1,2,1233,1,1,42,0.0,300,240.28,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,1,3,3403,2,0,3,0.0,300,59.02,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,1,4,2503,1,2,1,0.0,300,8.86,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,1,5,3202,4,0,1,0.0,1,3.83,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,2,1,0011,0,1,256,0.0,1,7.3,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,2,2,1233,2,1,13,0.0,300,225.53,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,2,3,4123,2,2,1,0.0,300,20.97,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,2,4,1423,4,0,1,0.0,1,3.83,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,3,1,0011,1,0,256,0.0,1,9.1,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,3,2,0233,1,0,34,0.0,300,231.34,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,3,3,2521,1,1,4,0.0,300,35.44,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,3,4,4513,1,1,1,0.0,300,9.43,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,3,5,4241,4,0,1,0.0,1,4.6,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,4,1,0011,0,0,256,0.0,1,7.26,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,4,2,2234,1,1,46,0.0,300,234.32,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,4,3,3354,0,1,4,0.0,300,44.79,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,4,4,2522,3,0,1,0.0,300,8.65,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,4,5,2525,4,0,1,0.0,1,4.11,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,5,1,0011,1,1,208,0.0,1,7.12,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,5,2,0203,1,0,21,0.0,300,180.45,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,5,3,5140,0,2,5,0.0,300,24.69,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,5,4,1215,2,0,1,0.0,300,9.88,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,5,5,1413,4,0,1,0.0,1,3.63,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,6,1,0011,0,1,256,0.0,1,6.83,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,6,2,1233,1,1,42,0.0,300,228.29,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,6,3,3403,2,0,3,0.0,300,43.6,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,6,4,2503,1,2,1,0.0,300,8.1,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,6,5,3202,4,0,1,0.0,1,3.77,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,7,1,0011,1,1,208,0.0,1,7.57,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,7,2,0203,1,1,32,0.0,300,198.9,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,7,3,5200,2,1,2,0.0,300,33.96,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,7,4,5004,4,0,1,0.0,2,3.99,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,8,1,0011,0,2,96,0.0,1,7.01,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,8,2,1203,0,3,10,0.0,300,111.61,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,8,3,2255,0,0,3,0.0,300,14.31,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,8,4,3140,2,2,1,0.0,300,8.11,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,8,5,4130,4,0,1,0.0,1,3.24,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,9,1,0011,0,0,256,0.0,1,6.9,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,9,2,2234,1,0,18,0.0,300,244.26,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,9,3,4555,1,2,2,0.0,300,20.34,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,9,4,5454,4,0,1,0.0,2,3.83,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,10,1,0011,0,0,256,0.0,1,7.34,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,10,2,2234,3,0,12,0.0,300,219.89,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,10,3,2522,0,1,2,0.0,300,15.95,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,10,4,3234,4,0,1,0.0,2,3.75,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,11,1,0011,0,0,256,0.0,1,6.77,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,11,2,2234,2,0,29,0.0,300,219.46,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,11,3,5252,2,0,4,0.0,300,33.29,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,11,4,4254,2,2,1,0.0,300,9.26,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,11,5,5244,4,0,1,0.0,1,3.91,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,12,1,0011,0,1,256,0.0,1,7.59,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,12,2,1233,1,0,34,0.0,300,241.28,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,12,3,2420,1,2,5,0.0,300,34.83,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,12,4,4250,3,0,1,0.0,300,9.55,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,12,5,4240,4,0,1,0.0,1,3.74,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,13,1,0011,2,1,32,0.0,1,6.89,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,13,2,0112,0,2,3,0.0,300,33.4,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,13,3,3410,0,3,1,0.0,300,7.82,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,13,4,4001,4,0,1,0.0,1,3.24,Irving Expected Size,True
+Strategy Matrix Comparison,Irving Expected Size,14,1,0011,0,1,256,0.0,1,7.23,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,14,2,1233,1,1,42,0.0,300,220.14,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,14,3,3403,2,0,3,0.0,300,43.57,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,14,4,2503,4,0,1,0.0,300,11.01,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,15,1,0011,0,1,256,0.0,1,9.61,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,15,2,1233,0,1,44,0.0,300,247.25,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,15,3,2404,0,2,5,0.0,300,47.82,Irving Expected Size,False
+Strategy Matrix Comparison,Irving Expected Size,15,4,3540,4,0,1,0.0,300,10.06,Irving Expected Size,False
+Strategy Matrix Comparison,Most Parts,1,1,0011,0,1,256,0.0,1,6.68,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,1,2,1223,1,2,18,0.0,300,249.6,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,1,3,1342,1,1,4,0.0,300,21.42,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,1,4,2122,1,1,1,0.0,300,9.22,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,1,5,3202,4,0,1,0.0,1,3.81,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,2,1,0011,0,1,256,0.0,1,7.31,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,2,2,1223,3,0,9,0.0,300,223.45,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,2,3,3234,0,3,2,0.0,300,16.26,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,2,4,1323,3,0,1,0.0,2,3.87,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,2,5,1423,4,0,1,0.0,1,4.35,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,3,1,0011,1,0,256,0.0,1,7.22,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,3,2,0223,1,0,29,0.0,300,229.53,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,3,3,4214,2,2,1,0.0,300,31.55,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,3,4,4241,4,0,1,0.0,1,3.9,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,4,1,0011,0,0,256,0.0,1,7.6,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,4,2,2234,1,1,46,0.0,300,243.72,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,4,3,2353,1,1,12,0.0,300,50.54,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,4,4,2545,3,0,2,0.0,300,16.27,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,4,5,2445,2,0,1,0.0,2,4.38,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,4,6,2525,4,0,1,0.0,1,4.13,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,5,1,0011,1,1,208,0.0,1,7.45,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,5,2,0203,1,0,21,0.0,300,185.1,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,5,3,1351,1,2,3,0.0,300,25.46,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,5,4,1113,3,0,1,0.0,300,8.12,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,5,5,1413,4,0,1,0.0,1,3.71,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,6,1,0011,0,1,256,0.0,1,7.08,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,6,2,1223,1,2,18,0.0,300,227.2,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,6,3,1342,1,1,4,0.0,300,21.59,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,6,4,2122,1,1,1,0.0,300,12.2,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,6,5,3202,4,0,1,0.0,1,4.31,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,7,1,0011,1,1,208,0.0,1,7.06,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,7,2,0203,1,1,32,0.0,300,187.97,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,7,3,0142,0,2,10,0.0,300,34.26,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,7,4,5040,2,2,1,0.0,300,17.45,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,7,5,5004,4,0,1,0.0,1,3.96,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,8,1,0011,0,2,96,0.0,1,11.73,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,8,2,1203,0,3,10,0.0,300,101.98,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,8,3,2241,0,2,2,0.0,300,14.84,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,8,4,4130,4,0,1,0.0,2,3.47,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,9,1,0011,0,0,256,0.0,1,7.14,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,9,2,2234,1,0,18,0.0,300,269.68,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,9,3,3535,0,2,1,0.0,300,22.51,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,9,4,5454,4,0,1,0.0,1,6.38,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,10,1,0011,0,0,256,0.0,1,7.09,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,10,2,2234,3,0,12,0.0,300,236.4,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,10,3,5225,1,0,2,0.0,300,16.11,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,10,4,3234,4,0,1,0.0,2,3.8,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,11,1,0011,0,0,256,0.0,1,7.06,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,11,2,2234,2,0,29,0.0,300,250.93,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,11,3,2335,0,2,3,0.0,300,39.34,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,11,4,4254,2,2,1,0.0,300,8.14,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,11,5,5244,4,0,1,0.0,1,4.35,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,12,1,0011,0,1,256,0.0,1,7.4,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,12,2,1223,1,0,29,0.0,300,231.13,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,12,3,4204,2,2,1,0.0,300,30.52,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,12,4,4240,4,0,1,0.0,1,3.78,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,13,1,0011,2,1,32,0.0,1,7.26,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,13,2,0112,0,2,3,0.0,300,32.38,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,13,3,3115,0,1,1,0.0,300,11.68,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,13,4,4001,4,0,1,0.0,1,4.07,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,14,1,0011,0,1,256,0.0,1,7.18,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,14,2,1223,1,1,51,0.0,300,222.9,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,14,3,1345,0,2,10,0.0,300,51.54,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,14,4,4230,0,3,1,0.0,300,15.02,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,14,5,2503,4,0,1,0.0,1,3.98,Most Parts (Partition Count),True
+Strategy Matrix Comparison,Most Parts,15,1,0011,0,1,256,0.0,1,7.31,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,15,2,1223,0,1,49,0.0,300,271.31,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,15,3,3404,1,2,5,0.0,300,48.8,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Most Parts,15,4,3540,4,0,1,0.0,300,10.49,Most Parts (Partition Count),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,1,1,0011,0,1,256,2.885,1,7.71,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,1,2,1245,1,0,17,3.263,300,246.49,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,1,3,3202,4,0,1,3.337,300,528.49,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,2,1,0011,0,1,256,2.885,1,7.57,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,2,2,1245,1,2,33,3.263,300,234.94,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,2,3,1324,2,2,1,3.239,300,564.83,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,2,4,1423,4,0,1,0.0,1,3.83,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,3,1,0011,1,0,256,2.885,1,7.66,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,3,2,0245,2,0,18,3.263,300,232.74,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,3,3,3043,1,0,3,3.197,300,544.63,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,3,4,2241,3,0,1,0.0,1,18.75,Exact Tree Search (expected_total_guesses),True
+Strategy Matrix Comparison,Adaptive Strategy Selector,3,5,4241,4,0,1,0.0,1,3.83,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,4,1,0011,0,0,256,2.885,1,7.63,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,4,2,2324,2,0,29,3.27,300,228.22,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,4,3,5522,2,2,1,3.289,300,547.36,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,4,4,2525,4,0,1,0.0,1,3.57,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,5,1,0011,1,1,208,2.885,1,7.47,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,5,2,0304,0,2,23,3.359,300,201.89,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,5,3,1123,2,1,2,3.154,300,544.88,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,5,4,1413,4,0,1,1.0,2,3.98,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,6,1,0011,0,1,256,2.885,1,7.31,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,6,2,1245,1,0,17,3.263,300,245.56,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,6,3,3202,4,0,1,3.337,300,533.36,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,7,1,0011,1,1,208,2.885,1,7.64,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,7,2,0304,2,1,13,3.359,300,191.65,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,7,3,0450,0,4,1,3.085,300,529.74,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,7,4,5004,4,0,1,0.0,1,3.76,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,8,1,0011,0,2,96,2.885,1,6.83,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,8,2,1203,0,3,10,0.0,300,88.24,Bounded Expectimax (Depth 2),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,8,3,2254,0,1,3,2.446,300,521.2,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,8,4,3140,2,2,1,0.0,1,20.34,Exact Tree Search (expected_total_guesses),True
+Strategy Matrix Comparison,Adaptive Strategy Selector,8,5,4130,4,0,1,0.0,1,3.51,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,9,1,0011,0,0,256,2.885,1,7.19,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,9,2,2324,1,0,18,3.27,300,221.12,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,9,3,5545,1,2,2,3.197,300,525.69,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,9,4,4554,2,2,1,1.0,2,4.24,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,9,5,5454,4,0,1,0.0,1,3.82,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,10,1,0011,0,0,256,2.885,1,7.18,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,10,2,2324,1,2,40,3.27,300,258.09,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,10,3,2433,1,3,2,0.0,300,53.76,Bounded Expectimax (Depth 2),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,10,4,3234,4,0,1,1.0,2,4.05,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,11,1,0011,0,0,256,2.885,1,7.5,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,11,2,2324,1,1,46,3.27,300,240.17,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,11,3,2255,1,1,6,0.0,300,70.4,Bounded Expectimax (Depth 2),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,11,4,5504,2,0,1,2.585,300,529.16,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,11,5,5244,4,0,1,0.0,1,6.25,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,12,1,0011,0,1,256,2.885,1,7.25,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,12,2,1245,2,0,18,3.263,300,224.66,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,12,3,3315,0,0,2,3.197,300,530.2,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,12,4,2240,3,0,1,1.0,2,3.8,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,12,5,4240,4,0,1,0.0,1,3.71,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,13,1,0011,2,1,32,2.885,1,7.02,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,13,2,0112,0,2,3,3.144,300,538.51,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,13,3,3001,3,0,2,0.0,1,18.99,Exact Tree Search (expected_total_guesses),True
+Strategy Matrix Comparison,Adaptive Strategy Selector,13,4,4001,4,0,1,1.0,2,3.34,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,14,1,0011,0,1,256,2.885,1,7.36,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,14,2,1245,0,2,51,3.263,300,231.58,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,14,3,3450,0,3,6,0.0,300,61.83,Bounded Expectimax (Depth 2),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,14,4,4302,1,2,1,2.585,300,521.29,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,14,5,2503,4,0,1,0.0,1,3.91,Deductive Elimination,True
+Strategy Matrix Comparison,Adaptive Strategy Selector,15,1,0011,0,1,256,2.885,1,7.57,Shannon Entropy (Information Gain),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,15,2,1245,1,1,45,3.263,300,228.0,Anytime Maximum Entropy,False
+Strategy Matrix Comparison,Adaptive Strategy Selector,15,3,4203,0,3,3,0.0,300,52.0,Bounded Expectimax (Depth 2),False
+Strategy Matrix Comparison,Adaptive Strategy Selector,15,4,3540,4,0,1,0.0,1,19.2,Exact Tree Search (expected_total_guesses),True
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),1,1,011,1,1,8,2.673,1,0.23,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),1,2,112,1,1,2,2.75,64,2.15,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),1,3,131,0,1,1,1.0,2,0.27,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),1,4,210,3,0,1,0.0,1,0.17,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),2,1,011,1,1,8,2.673,1,0.33,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),2,2,112,1,2,1,2.75,64,2.06,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),2,3,121,3,0,1,0.0,1,0.16,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),3,1,011,1,0,17,2.673,1,0.21,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),3,2,213,2,0,2,3.029,64,4.3,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),3,3,212,3,0,1,1.0,2,0.21,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),4,1,011,1,1,8,2.673,1,0.21,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),4,2,112,1,1,2,2.75,64,1.9,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),4,3,131,3,0,1,1.0,2,0.35,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),5,1,011,1,0,17,2.673,1,0.27,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),5,2,213,0,1,4,3.029,64,4.09,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),5,3,002,1,2,1,2.0,64,1.27,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),5,4,020,3,0,1,0.0,1,0.19,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),6,1,011,1,1,8,2.673,1,0.2,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),6,2,112,1,1,2,2.75,64,1.86,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),6,3,131,0,1,1,1.0,2,0.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),6,4,210,3,0,1,0.0,1,0.26,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),7,1,011,0,1,14,2.673,1,0.3,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),7,2,202,1,0,3,2.842,64,2.89,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),7,3,300,3,0,1,1.585,64,1.01,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),8,1,011,0,1,14,2.673,1,0.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),8,2,202,3,0,1,2.842,64,2.96,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),9,1,011,0,0,8,2.673,1,0.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),9,2,022,1,0,2,2.25,64,1.84,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),9,3,323,3,0,1,1.0,2,0.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),10,1,011,1,0,17,2.673,1,0.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),10,2,213,2,0,2,3.029,64,3.31,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),10,3,212,3,0,1,1.0,2,0.21,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),1,1,0011,0,1,256,2.885,1,3.9,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),1,2,1245,1,0,17,3.263,300,249.6,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),1,3,3202,4,0,1,3.337,300,21.05,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),2,1,0011,0,1,256,2.885,1,3.77,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),2,2,1245,1,2,33,3.263,300,234.29,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),2,3,1324,2,2,1,3.239,300,35.85,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),2,4,1423,4,0,1,0.0,1,3.99,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),3,1,0011,1,0,256,2.885,1,5.98,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),3,2,0245,2,0,18,3.263,300,245.24,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),3,3,3035,0,0,2,3.197,300,22.86,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),3,4,2241,3,0,1,1.0,2,3.82,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),3,5,4241,4,0,1,0.0,1,6.78,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),4,1,0011,0,0,256,2.885,1,5.63,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),4,2,2324,2,0,29,3.27,300,243.38,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),4,3,4534,1,0,3,3.247,300,31.83,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),4,4,2522,3,0,1,1.585,300,9.38,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),4,5,2525,4,0,1,0.0,1,4.89,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),5,1,0011,1,1,208,2.885,1,3.83,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),5,2,0304,0,2,23,3.359,300,202.69,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),5,3,1123,2,1,2,3.154,300,37.47,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),5,4,1413,4,0,1,1.0,2,4.37,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),6,1,0011,0,1,256,2.885,1,3.72,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),6,2,1245,1,0,17,3.263,300,226.51,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),6,3,3202,4,0,1,3.337,300,21.14,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),7,1,0011,1,1,208,2.885,1,4.11,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),7,2,0304,2,1,13,3.359,300,190.28,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),7,3,0420,0,3,2,3.085,300,18.89,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),7,4,4004,3,0,1,1.0,2,3.85,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),7,5,5004,4,0,1,0.0,1,3.59,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),8,1,0011,0,2,96,2.885,1,4.03,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),8,2,1320,1,2,16,3.17,300,93.62,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),8,3,1204,0,3,3,3.031,300,20.93,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),8,4,3140,2,2,1,1.585,300,8.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),8,5,4130,4,0,1,0.0,1,3.52,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),9,1,0011,0,0,256,2.885,1,3.64,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),9,2,2324,1,0,18,3.27,300,231.11,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),9,3,3535,0,2,1,3.155,300,21.58,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),9,4,5454,4,0,1,0.0,1,3.79,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),10,1,0011,0,0,256,2.885,1,3.76,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),10,2,2324,1,2,40,3.27,300,235.37,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),10,3,2433,1,3,2,3.209,300,47.98,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),10,4,3234,4,0,1,1.0,2,11.83,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),1,1,00122,1,3,192,3.445,1,35.56,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),1,2,01203,0,4,19,3.359,300,289.62,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),1,3,20041,1,2,4,3.366,300,49.58,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),1,4,12032,2,2,1,2.0,300,32.13,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),1,5,32020,5,0,1,0.0,1,21.67,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),2,1,00122,0,2,1190,3.445,1,24.69,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),2,2,33014,0,4,46,3.643,271,1041.46,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),2,3,14503,3,0,3,3.67,300,75.86,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),2,4,11303,2,1,1,1.585,300,31.75,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),2,5,14233,5,0,1,0.0,1,24.51,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),3,1,00122,1,2,984,3.445,1,22.84,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),3,2,01034,0,2,158,3.619,300,994.12,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),3,3,33212,2,1,18,3.799,300,207.35,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),3,4,42512,4,0,1,3.614,300,48.01,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),3,5,42412,5,0,1,0.0,1,28.42,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),4,1,00122,0,3,574,3.445,1,25.27,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),4,2,12234,1,1,70,3.606,300,591.57,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),4,3,25205,3,2,2,3.709,300,133.27,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),4,4,22505,1,4,1,1.0,2,25.62,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),4,5,25250,5,0,1,0.0,1,24.19,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),5,1,00122,1,1,1360,3.445,1,26.75,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),5,2,03403,0,3,95,3.611,205,1046.41,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),5,3,40351,0,4,10,3.749,300,133.85,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),5,4,14130,5,0,1,2.922,300,43.27,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),6,1,00122,1,2,984,3.445,1,23.77,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),6,2,01034,1,1,100,3.619,300,986.84,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),6,3,11223,1,2,12,3.821,300,143.68,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),6,4,21150,0,3,1,3.252,300,44.28,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),6,5,32025,5,0,1,0.0,1,24.15,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),7,1,00122,1,1,1360,3.445,1,24.42,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),7,2,03403,1,3,44,3.611,228,1039.56,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),7,3,40053,3,2,1,3.573,300,114.88,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),7,4,50043,5,0,1,0.0,1,37.82,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),8,1,00122,0,3,574,3.445,1,24.66,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),8,2,12234,0,3,50,3.606,300,616.11,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),8,3,25301,2,1,8,3.42,300,82.75,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),8,4,24003,1,3,1,2.75,300,33.35,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),8,5,41300,5,0,1,0.0,1,25.72,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),9,1,00122,0,0,243,3.445,1,23.91,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),9,2,33345,1,2,32,3.743,300,283.44,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),9,3,34454,1,3,4,3.739,300,61.12,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),9,4,44535,2,3,1,2.0,300,28.81,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),9,5,54543,5,0,1,0.0,1,22.33,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),10,1,00122,0,2,1190,3.445,1,25.7,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),10,2,13244,1,3,85,3.643,268,1045.66,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),10,3,25314,1,3,9,3.582,300,123.21,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),10,4,34211,2,2,1,3.17,300,36.7,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),10,5,32341,5,0,1,0.0,1,31.28,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),1,1,0011,0,1,864,2.553,1,11.77,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),1,2,1423,1,1,147,3.105,300,788.64,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),1,3,1357,1,0,13,3.353,300,154.07,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),1,4,6126,0,0,1,3.027,300,26.8,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),1,5,4303,4,0,1,0.0,1,13.78,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),2,1,0011,0,0,1296,2.553,1,11.63,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),2,2,2345,1,3,8,3.057,251,1021.81,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),2,3,2443,1,2,3,1.811,300,25.18,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),2,4,2534,4,0,1,1.585,300,18.84,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),3,1,0011,1,0,864,2.553,1,12.44,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),3,2,0423,0,1,185,3.105,300,891.8,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),3,3,2561,1,2,21,3.29,300,194.92,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),3,4,7251,3,0,1,3.16,300,40.4,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),3,5,5251,4,0,1,0.0,1,12.58,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),4,1,0011,0,0,1296,2.553,1,11.27,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),4,2,2345,0,1,152,3.057,259,1021.58,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),4,3,3667,2,0,20,3.274,300,156.12,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),4,4,7674,0,2,2,3.209,300,36.16,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),4,5,3737,4,0,1,1.0,2,14.06,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),5,1,0011,1,1,456,2.553,1,11.5,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),5,2,0240,0,1,87,3.201,300,427.94,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),5,3,5121,0,3,5,3.357,300,111.56,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),5,4,5364,1,1,1,2.322,300,18.96,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),5,5,1514,4,0,1,0.0,1,11.86,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),6,1,0011,1,0,864,2.553,1,12.09,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),6,2,0423,0,3,47,3.105,300,789.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),6,3,4136,1,2,3,2.882,300,66.06,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),6,4,3046,0,2,1,1.585,300,25.02,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),6,5,4312,4,0,1,0.0,1,12.68,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),7,1,0011,1,1,456,2.553,1,15.75,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),7,2,0240,0,2,47,3.201,300,501.25,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),7,3,0053,1,1,7,3.103,300,57.32,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),7,4,6747,0,2,1,2.522,300,21.04,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),7,5,7006,4,0,1,0.0,1,11.5,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),8,1,0011,1,1,456,2.553,1,12.24,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),8,2,0240,1,0,53,3.201,300,437.82,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),8,3,0136,1,0,4,3.176,300,61.8,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),8,4,7561,1,1,1,1.5,300,17.91,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),8,5,5141,4,0,1,0.0,1,11.57,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),9,1,0011,0,0,1296,2.553,1,11.75,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),9,2,2345,1,0,108,3.057,271,1021.06,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),9,3,6773,0,2,14,3.174,300,112.28,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),9,4,6657,0,3,1,3.093,300,28.61,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),9,5,7565,4,0,1,0.0,1,13.91,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),10,1,0011,0,0,1296,2.553,1,12.33,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),10,2,2345,2,0,96,3.057,268,1023.06,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),10,3,7546,2,0,11,3.145,300,97.39,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),10,4,4364,2,2,1,2.664,300,25.86,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),10,5,4346,4,0,1,0.0,1,12.93,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),1,1,01234,1,2,1260,3.0,1,21.99,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),1,2,65204,1,2,245,3.216,256,1036.87,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),1,3,32674,2,2,13,3.508,300,282.67,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),1,4,12764,2,1,2,2.873,300,39.98,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),1,5,37064,5,0,1,1.0,2,24.54,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),2,1,01234,2,1,360,3.0,1,21.98,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),2,2,01365,0,2,34,3.343,300,380.36,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),2,3,27514,1,3,8,3.146,300,63.04,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),2,4,73254,1,4,1,3.0,300,31.39,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),2,5,52734,5,0,1,0.0,1,20.75,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),3,1,01234,0,4,795,3.0,1,30.55,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),3,2,43527,0,4,81,3.035,300,879.9,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),3,3,25413,3,1,4,3.534,300,131.69,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),3,4,25043,1,2,1,2.0,300,50.01,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),3,5,72413,5,0,1,0.0,1,26.47,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),4,1,01234,1,2,1260,3.0,1,22.81,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),4,2,71035,1,3,132,3.216,234,1044.85,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),4,3,51740,1,2,24,3.278,300,175.96,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),4,4,17630,3,2,1,3.57,300,63.67,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),4,5,67130,5,0,1,0.0,1,23.98,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),5,1,01234,1,2,1260,3.0,1,24.4,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),5,2,71250,0,2,150,3.216,236,1042.89,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),5,3,63704,1,2,17,3.362,300,198.16,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),5,4,35624,2,2,2,3.22,300,61.94,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),5,5,15364,1,4,1,1.0,2,22.59,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),5,6,36514,5,0,1,0.0,1,24.99,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),6,1,01234,0,3,1920,3.0,1,22.03,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),6,2,12546,0,4,201,3.189,147,1044.54,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),6,3,54160,2,1,17,3.274,300,244.15,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),6,4,54721,1,3,1,3.41,300,57.18,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),6,5,64172,5,0,1,0.0,1,29.4,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),7,1,01234,0,4,795,3.0,1,22.87,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),7,2,26173,1,2,156,3.035,300,895.53,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),7,3,34107,0,3,35,3.212,300,261.72,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),7,4,23451,0,3,6,3.614,300,70.19,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),7,5,42063,1,3,1,2.585,300,47.87,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),7,6,16042,5,0,1,0.0,1,28.8,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),8,1,01234,0,4,795,3.0,1,22.3,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),8,2,40725,0,3,201,3.035,300,934.62,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),8,3,24351,0,3,38,3.274,300,250.17,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),8,4,13072,0,4,2,3.517,300,81.67,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),8,5,37140,3,2,1,1.0,2,27.54,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),8,6,37410,5,0,1,0.0,1,38.2,Anytime Maximum Entropy,True
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),9,1,01234,0,3,1920,3.0,1,22.95,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),9,2,12546,0,4,201,3.189,143,1051.45,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),9,3,54160,2,2,15,3.274,300,361.96,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),9,4,20165,2,2,2,3.374,300,60.64,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),9,5,25460,5,0,1,1.0,2,36.95,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),10,1,01234,0,4,795,3.0,1,35.96,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),10,2,53061,0,3,201,3.035,300,898.15,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),10,3,20643,1,3,27,3.274,300,252.39,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),10,4,40126,0,4,3,3.514,300,59.16,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),10,5,16342,0,5,1,1.585,300,31.39,Anytime Maximum Entropy,False
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),10,6,62413,5,0,1,0.0,1,29.24,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (10ms limit),1,1,0001,1,0,317,2.693,2,17.5,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),1,2,0234,1,2,45,3.326,10,18.39,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),1,3,2054,0,2,7,3.173,46,18.18,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),1,4,0322,1,3,1,2.807,300,14.98,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),1,5,3202,4,0,1,0.0,1,4.63,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (10ms limit),2,1,0001,0,1,308,2.693,3,19.15,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),2,2,1123,3,0,15,3.214,12,17.84,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),2,3,2142,0,3,2,2.74,174,15.4,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),2,4,1223,3,0,1,1.0,2,6.2,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),2,5,1423,4,0,1,0.0,1,4.48,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (10ms limit),3,1,0001,1,0,317,2.693,3,17.34,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),3,2,0234,1,1,45,3.326,11,17.52,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),3,3,0455,0,1,10,3.423,65,15.6,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),3,4,2442,1,2,1,3.122,208,16.5,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),3,5,4241,4,0,1,0.0,1,4.31,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (10ms limit),4,1,0001,0,0,256,2.693,3,15.69,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),4,2,2234,1,1,46,3.27,11,16.87,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),4,3,2525,4,0,1,3.455,49,15.69,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),5,1,0001,0,1,308,2.693,3,16.02,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),5,2,1123,2,1,23,3.214,11,19.23,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),5,3,1324,1,2,6,3.121,84,15.6,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),5,4,1253,2,0,1,2.585,300,13.04,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),5,5,1413,4,0,1,0.0,1,4.37,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (10ms limit),6,1,0001,1,0,317,2.693,3,14.68,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),6,2,0234,1,2,45,3.326,10,20.49,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),6,3,2054,0,2,7,3.173,68,16.83,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),6,4,0322,1,3,1,2.807,268,16.52,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),6,5,3202,4,0,1,0.0,1,4.65,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (10ms limit),7,1,0001,2,0,123,2.693,2,15.01,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),7,2,0023,1,1,28,3.156,22,16.92,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),7,3,3015,1,1,5,3.308,101,16.09,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),7,4,0405,1,3,1,2.322,300,14.0,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),7,5,5004,4,0,1,0.0,1,4.66,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (10ms limit),8,1,0001,0,2,61,2.693,3,15.43,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),8,2,1230,2,1,12,2.66,61,14.63,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),8,3,1543,0,3,2,2.855,221,14.13,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),8,4,4130,4,0,1,1.0,2,3.45,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),9,1,0001,0,0,256,2.693,3,14.14,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),9,2,2234,1,0,18,3.27,15,17.28,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),9,3,4555,1,2,2,3.197,148,14.84,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),9,4,5454,4,0,1,1.0,2,4.88,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),10,1,0001,0,0,256,2.693,3,15.62,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),10,2,2234,3,0,12,3.27,13,17.93,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),10,3,3524,2,1,1,2.752,215,15.26,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (10ms limit),10,4,3234,4,0,1,0.0,1,4.05,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),1,1,0012,1,1,230,3.044,13,57.03,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),1,2,0304,1,1,39,3.303,57,58.45,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),1,3,0425,0,2,6,3.355,300,52.8,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),1,4,1044,0,1,1,2.585,300,11.93,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),1,5,3202,4,0,1,0.0,1,4.09,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),2,1,0012,0,2,222,3.044,14,54.13,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),2,2,1425,3,0,8,3.278,81,56.82,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),2,3,3215,0,3,1,2.5,300,12.94,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),2,4,1423,4,0,1,0.0,1,3.78,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),3,1,0012,0,2,222,3.044,15,56.03,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),3,2,1425,0,3,27,3.278,81,57.27,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),3,3,4231,3,0,2,3.26,300,43.47,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),3,4,4241,4,0,1,1.0,2,4.21,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),4,1,0012,0,1,276,3.044,15,56.78,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),4,2,1334,0,0,9,3.269,64,56.71,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),4,3,1252,0,3,1,2.948,300,14.22,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),4,4,2525,4,0,1,0.0,1,3.87,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),5,1,0012,1,0,182,3.044,15,56.12,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),5,2,0345,0,2,39,3.288,100,57.26,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),5,3,2452,1,0,5,3.359,300,39.72,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),5,4,3434,1,1,1,2.322,300,10.28,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),5,5,1413,4,0,1,0.0,1,3.91,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),6,1,0012,1,1,230,3.044,14,54.98,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),6,2,0304,1,1,39,3.303,71,59.23,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),6,3,0425,0,2,6,3.355,300,40.24,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),6,4,1044,0,1,1,2.585,300,12.02,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),6,5,3202,4,0,1,0.0,1,3.81,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),7,1,0012,1,1,230,3.044,15,54.85,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),7,2,0304,2,1,11,3.303,79,56.33,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),7,3,5005,3,0,1,3.027,300,15.55,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),7,4,5004,4,0,1,0.0,1,3.77,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),8,1,0012,0,2,222,3.044,13,55.26,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),8,2,1425,0,2,41,3.278,71,58.35,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),8,3,3250,1,1,6,3.448,300,53.49,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),8,4,2231,1,1,1,2.585,300,13.08,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),8,5,4130,4,0,1,0.0,1,6.21,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),9,1,0012,0,0,81,3.044,11,59.89,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),9,2,3344,1,1,16,3.308,207,55.84,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),9,3,3535,0,2,1,3.328,300,25.07,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),9,4,5454,4,0,1,0.0,1,4.19,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (50ms limit),10,1,0012,0,1,276,3.044,11,56.93,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),10,2,1334,2,1,15,3.269,53,59.73,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),10,3,5135,1,0,2,3.107,300,21.73,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (50ms limit),10,4,3234,4,0,1,1.0,2,4.42,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),1,1,0123,0,3,136,3.057,54,207.0,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),1,2,3014,1,1,26,2.996,300,142.2,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),1,3,3205,3,0,2,3.2,300,32.65,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),1,4,3200,3,0,1,1.0,2,5.95,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),1,5,3202,4,0,1,0.0,1,4.01,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),2,1,0112,0,2,222,3.044,51,208.1,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),2,2,2340,0,3,20,3.287,253,208.32,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),2,3,3205,0,2,4,3.122,300,41.43,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),2,4,1034,1,2,1,2.0,300,16.72,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),2,5,1423,4,0,1,0.0,1,4.37,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),3,1,0123,0,2,312,3.057,53,206.61,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),3,2,1345,1,1,63,3.227,219,206.9,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),3,3,2535,0,1,12,3.398,300,77.64,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),3,4,4300,1,0,2,3.022,300,29.85,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),3,5,3311,1,0,1,1.0,2,7.82,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),3,6,4241,4,0,1,0.0,1,7.79,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),4,1,0112,0,1,276,3.044,45,212.43,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),4,2,3034,0,0,9,3.269,237,208.1,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),4,3,5322,1,2,2,2.948,300,14.92,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),4,4,2225,3,0,1,1.0,2,4.37,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),4,5,2525,4,0,1,0.0,1,3.96,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),5,1,0123,1,1,252,3.057,55,206.3,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),5,2,1425,2,0,19,3.174,271,207.17,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),5,3,4324,0,2,3,3.076,300,26.32,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),5,4,0435,1,1,1,1.585,300,8.79,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),5,5,1413,4,0,1,0.0,1,4.16,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),6,1,0123,0,3,136,3.057,53,203.79,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),6,2,3014,1,1,26,2.996,300,127.87,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),6,3,3205,3,0,2,3.2,300,30.53,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),6,4,3200,3,0,1,1.0,2,4.18,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),6,5,3202,4,0,1,0.0,1,3.74,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),7,1,0123,0,1,152,3.057,55,207.78,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),7,2,1445,0,2,21,3.274,300,133.67,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),7,3,4355,0,2,2,3.142,300,23.97,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),7,4,5004,4,0,1,1.0,2,4.07,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),8,1,0123,1,2,132,3.057,52,203.69,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),8,2,0335,1,1,14,2.926,300,127.62,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),8,3,5112,1,0,1,3.093,300,18.2,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),8,4,4130,4,0,1,0.0,1,3.59,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),9,1,0123,0,0,16,3.057,52,203.54,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),9,2,4505,0,3,1,2.781,300,20.99,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),9,3,5454,4,0,1,0.0,1,5.22,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (200ms limit),10,1,0123,0,2,312,3.057,53,205.8,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),10,2,1345,0,2,64,3.227,225,207.06,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),10,3,4221,1,1,12,3.304,300,62.22,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),10,4,4410,0,1,2,3.085,300,17.92,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),10,5,2551,0,1,1,1.0,2,4.23,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (200ms limit),10,6,3234,4,0,1,0.0,1,4.16,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),1,1,0123,0,3,136,3.057,259,1006.54,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),1,2,3014,1,1,26,2.996,300,133.73,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),1,3,3205,3,0,2,3.2,300,33.38,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),1,4,3200,3,0,1,1.0,2,3.74,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),1,5,3202,4,0,1,0.0,1,3.77,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),2,1,0123,2,1,48,3.057,247,1005.47,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),2,2,2142,0,3,4,2.951,300,49.13,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),2,3,0221,1,1,1,2.0,300,9.19,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),2,4,1423,4,0,1,0.0,1,3.61,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),3,1,0123,0,2,312,3.057,257,1006.55,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),3,2,1345,1,1,63,3.227,300,272.17,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),3,3,2535,0,1,12,3.398,300,66.09,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),3,4,0054,0,1,2,3.085,300,17.18,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),3,5,1412,0,3,1,1.0,2,4.13,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),3,6,4241,4,0,1,0.0,1,5.99,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),4,1,0123,1,0,108,3.057,247,1006.54,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),4,2,5345,1,1,22,3.174,300,124.89,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),4,3,2525,4,0,1,3.266,300,42.35,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),5,1,0123,1,1,252,3.057,261,1007.06,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),5,2,1425,2,0,19,3.174,300,224.91,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),5,3,5320,0,1,3,3.076,300,27.88,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),5,4,3443,2,0,1,1.585,300,9.32,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),5,5,1413,4,0,1,0.0,1,5.93,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),6,1,0123,0,3,136,3.057,257,1008.44,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),6,2,3014,1,1,26,2.996,300,126.24,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),6,3,3205,3,0,2,3.2,300,30.16,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),6,4,3200,3,0,1,1.0,2,3.86,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),6,5,3202,4,0,1,0.0,1,3.94,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),7,1,0123,0,1,152,3.057,256,1004.83,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),7,2,1445,0,2,21,3.274,300,132.54,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),7,3,4535,0,2,2,3.142,300,25.11,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),7,4,2254,1,1,1,1.0,2,4.01,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),7,5,5004,4,0,1,0.0,1,4.05,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),8,1,0123,1,2,132,3.057,260,1008.23,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),8,2,4003,1,2,10,2.926,300,116.72,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),8,3,3020,1,1,2,2.922,300,13.73,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),8,4,3104,1,3,1,1.0,2,3.36,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),8,5,4130,4,0,1,0.0,1,3.46,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),9,1,0123,0,0,16,3.057,269,1004.52,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),9,2,1455,2,1,3,2.781,300,20.19,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),9,3,5445,2,2,1,1.585,300,7.61,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),9,4,5454,4,0,1,0.0,1,3.3,Anytime Maximum Entropy,True
+Search Budget Impact,Anytime Entropy (1000ms limit),10,1,0123,0,2,312,3.057,240,1004.06,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),10,2,1345,0,2,64,3.227,300,279.12,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),10,3,4221,1,1,12,3.304,300,65.67,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),10,4,4410,0,1,2,3.085,300,18.78,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),10,5,2551,0,1,1,1.0,2,4.54,Anytime Maximum Entropy,False
+Search Budget Impact,Anytime Entropy (1000ms limit),10,6,3234,4,0,1,0.0,1,4.52,Anytime Maximum Entropy,True

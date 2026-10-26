@@ -1,0 +1,211 @@
+experiment_name,strategy_name,budget_description,num_pegs,num_colors,allow_repeats,trial_id,seed,secret,solved,total_turns,total_elapsed_ms,total_nodes,mean_turn_time_ms
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,1,exp_seed_0,110,True,3,121.13,343,40.38
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,2,exp_seed_1,021,True,3,119.82,339,39.94
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,3,exp_seed_2,212,True,3,118.97,348,39.66
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,4,exp_seed_3,121,True,2,120.28,343,60.14
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,5,exp_seed_4,020,True,2,121.27,338,60.64
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,6,exp_seed_5,110,True,3,120.32,343,40.11
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,7,exp_seed_6,200,True,3,117.4,338,39.13
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,8,exp_seed_7,201,True,3,118.21,339,39.4
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,9,exp_seed_8,222,True,3,121.84,348,40.61
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,10,exp_seed_9,111,True,2,118.62,338,59.31
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,11,exp_seed_10,212,True,3,121.62,348,40.54
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,12,exp_seed_11,212,True,3,122.42,348,40.81
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,13,exp_seed_12,200,True,3,119.75,338,39.92
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,14,exp_seed_13,120,True,2,119.89,339,59.94
+Exact Reference Benchmark,Exact Tree Policy (Optimal DP),Exhaustive minimax game-tree policy,3,3,True,15,exp_seed_14,122,True,3,121.85,348,40.62
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,1,exp_seed_0,110,True,3,2.94,56,0.98
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,2,exp_seed_1,021,True,3,2.56,55,0.85
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,3,exp_seed_2,212,True,2,2.58,54,1.29
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,4,exp_seed_3,121,True,3,2.78,55,0.93
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,5,exp_seed_4,020,True,3,2.62,55,0.87
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,6,exp_seed_5,110,True,3,2.8,56,0.93
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,7,exp_seed_6,200,True,4,2.92,57,0.73
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,8,exp_seed_7,201,True,3,2.63,55,0.88
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,9,exp_seed_8,222,True,2,2.13,28,1.07
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,10,exp_seed_9,111,True,3,2.78,55,0.93
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,11,exp_seed_10,212,True,2,2.61,54,1.3
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,12,exp_seed_11,212,True,2,2.58,54,1.29
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,13,exp_seed_12,200,True,4,2.91,57,0.73
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,14,exp_seed_13,120,True,3,2.81,55,0.94
+Exact Reference Benchmark,Shannon Entropy,Greedy information gain,3,3,True,15,exp_seed_14,122,True,3,2.79,55,0.93
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,1,exp_seed_0,110,True,3,2.64,55,0.88
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,2,exp_seed_1,021,True,3,2.81,56,0.94
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,3,exp_seed_2,212,True,3,2.62,55,0.87
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,4,exp_seed_3,121,True,3,2.78,55,0.93
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,5,exp_seed_4,020,True,3,2.63,55,0.88
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,6,exp_seed_5,110,True,3,2.57,55,0.86
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,7,exp_seed_6,200,True,3,3.28,55,1.09
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,8,exp_seed_7,201,True,4,2.84,57,0.71
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,9,exp_seed_8,222,True,2,2.09,28,1.05
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,10,exp_seed_9,111,True,3,2.73,55,0.91
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,11,exp_seed_10,212,True,3,2.6,55,0.87
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,12,exp_seed_11,212,True,3,2.59,55,0.86
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,13,exp_seed_12,200,True,3,2.59,55,0.86
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,14,exp_seed_13,120,True,2,2.46,54,1.23
+Exact Reference Benchmark,Knuth Minimax,Minimax worst-case partition,3,3,True,15,exp_seed_14,122,True,2,2.53,54,1.27
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,1,exp_seed_0,3202,True,3,247.22,601,82.41
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,2,exp_seed_1,1423,True,4,258.56,602,64.64
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,3,exp_seed_2,4241,True,5,252.34,902,50.47
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,4,exp_seed_3,2525,True,4,276.45,602,69.11
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,5,exp_seed_4,1413,True,4,225.18,603,56.3
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,6,exp_seed_5,3202,True,3,259.92,601,86.64
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,7,exp_seed_6,5004,True,5,215.46,604,43.09
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,8,exp_seed_7,4130,True,5,131.36,902,26.27
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,9,exp_seed_8,5454,True,5,289.27,604,57.85
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,10,exp_seed_9,3234,True,4,272.43,603,68.11
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,11,exp_seed_10,5244,True,5,282.03,902,56.41
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,12,exp_seed_11,4240,True,4,283.17,602,70.79
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,13,exp_seed_12,4001,True,4,56.66,602,14.16
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,14,exp_seed_13,2503,True,5,294.4,902,58.88
+Strategy Matrix Comparison,Shannon Entropy,Full candidate entropy maximization,4,6,True,15,exp_seed_14,3540,True,4,301.7,901,75.42
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,1,exp_seed_0,3202,True,5,305.34,902,61.07
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,2,exp_seed_1,1423,True,5,264.32,604,52.86
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,3,exp_seed_2,4241,True,5,278.29,902,55.66
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,4,exp_seed_3,2525,True,3,284.61,601,94.87
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,5,exp_seed_4,1413,True,5,226.37,902,45.27
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,6,exp_seed_5,3202,True,5,294.13,902,58.83
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,7,exp_seed_6,5004,True,5,229.2,604,45.84
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,8,exp_seed_7,4130,True,5,137.49,902,27.5
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,9,exp_seed_8,5454,True,4,271.49,901,67.87
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,10,exp_seed_9,3234,True,4,245.25,603,61.31
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,11,exp_seed_10,5244,True,5,271.52,902,54.3
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,12,exp_seed_11,4240,True,5,290.66,902,58.13
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,13,exp_seed_12,4001,True,4,52.21,602,13.05
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,14,exp_seed_13,2503,True,4,285.77,901,71.44
+Strategy Matrix Comparison,Knuth Minimax,Worst-case remaining candidate minimization,4,6,True,15,exp_seed_14,3540,True,4,309.84,901,77.46
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,1,exp_seed_0,3202,True,5,319.62,902,63.92
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,2,exp_seed_1,1423,True,4,257.64,602,64.41
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,3,exp_seed_2,4241,True,5,289.9,902,57.98
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,4,exp_seed_3,2525,True,5,299.13,902,59.83
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,5,exp_seed_4,1413,True,5,225.78,902,45.16
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,6,exp_seed_5,3202,True,5,290.59,902,58.12
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,7,exp_seed_6,5004,True,4,244.41,603,61.1
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,8,exp_seed_7,4130,True,5,144.27,902,28.85
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,9,exp_seed_8,5454,True,4,275.33,603,68.83
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,10,exp_seed_9,3234,True,4,246.93,603,61.73
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,11,exp_seed_10,5244,True,5,272.69,902,54.54
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,12,exp_seed_11,4240,True,5,296.98,902,59.4
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,13,exp_seed_12,4001,True,4,51.35,602,12.84
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,14,exp_seed_13,2503,True,4,281.94,901,70.49
+Strategy Matrix Comparison,Irving Expected Size,Expected candidate partition size minimization,4,6,True,15,exp_seed_14,3540,True,4,314.74,901,78.69
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,1,exp_seed_0,3202,True,5,290.72,902,58.14
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,2,exp_seed_1,1423,True,5,255.24,604,51.05
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,3,exp_seed_2,4241,True,4,272.18,602,68.05
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,4,exp_seed_3,2525,True,6,326.65,904,54.44
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,5,exp_seed_4,1413,True,5,229.85,902,45.97
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,6,exp_seed_5,3202,True,5,272.38,902,54.48
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,7,exp_seed_6,5004,True,5,250.69,902,50.14
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,8,exp_seed_7,4130,True,4,132.01,603,33.0
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,9,exp_seed_8,5454,True,4,305.7,602,76.43
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,10,exp_seed_9,3234,True,4,263.41,603,65.85
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,11,exp_seed_10,5244,True,5,309.81,902,61.96
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,12,exp_seed_11,4240,True,4,272.83,602,68.21
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,13,exp_seed_12,4001,True,4,55.39,602,13.85
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,14,exp_seed_13,2503,True,5,300.63,902,60.13
+Strategy Matrix Comparison,Most Parts,Partition count maximization,4,6,True,15,exp_seed_14,3540,True,4,337.92,901,84.48
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,1,exp_seed_0,3202,True,3,782.7,601,260.9
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,2,exp_seed_1,1423,True,4,811.17,602,202.79
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,3,exp_seed_2,4241,True,5,807.61,603,161.52
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,4,exp_seed_3,2525,True,4,786.78,602,196.69
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,5,exp_seed_4,1413,True,4,758.23,603,189.56
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,6,exp_seed_5,3202,True,3,786.23,601,262.08
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,7,exp_seed_6,5004,True,4,732.79,602,183.2
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,8,exp_seed_7,4130,True,5,640.11,603,128.02
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,9,exp_seed_8,5454,True,5,762.06,604,152.41
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,10,exp_seed_9,3234,True,4,323.08,603,80.77
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,11,exp_seed_10,5244,True,5,853.48,902,170.7
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,12,exp_seed_11,4240,True,5,769.62,604,153.92
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,13,exp_seed_12,4001,True,4,567.85,304,141.96
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,14,exp_seed_13,2503,True,5,825.96,902,165.19
+Strategy Matrix Comparison,Adaptive Strategy Selector,Expectimax (< 36 cands) + Anytime Entropy,4,6,True,15,exp_seed_14,3540,True,4,306.77,602,76.69
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,1,exp_seed_0,210,True,4,2.83,68,0.71
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,2,exp_seed_1,121,True,3,2.55,66,0.85
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,3,exp_seed_2,212,True,3,4.72,67,1.57
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,4,exp_seed_3,131,True,3,2.45,67,0.82
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,5,exp_seed_4,020,True,4,5.83,130,1.46
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,6,exp_seed_5,210,True,4,2.51,68,0.63
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,7,exp_seed_6,300,True,3,4.2,129,1.4
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,8,exp_seed_7,202,True,2,3.15,65,1.58
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,9,exp_seed_8,323,True,3,2.22,67,0.74
+Board Scaling Analysis,Anytime Entropy (Small 3p/4c),"1.0s max turn budget, canonical first guess",3,4,True,10,exp_seed_9,212,True,3,3.7,67,1.23
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,1,exp_seed_0,3202,True,3,274.55,601,91.52
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,2,exp_seed_1,1423,True,4,277.9,602,69.47
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,3,exp_seed_2,4241,True,5,284.68,604,56.94
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,4,exp_seed_3,2525,True,5,295.12,902,59.02
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,5,exp_seed_4,1413,True,4,248.36,603,62.09
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,6,exp_seed_5,3202,True,3,251.37,601,83.79
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,7,exp_seed_6,5004,True,5,220.72,604,44.14
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,8,exp_seed_7,4130,True,5,130.28,902,26.06
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,9,exp_seed_8,5454,True,4,260.12,602,65.03
+Board Scaling Analysis,Anytime Entropy (Standard 4p/6c),"1.0s max turn budget, canonical first guess",4,6,True,10,exp_seed_9,3234,True,4,298.93,603,74.73
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,1,exp_seed_0,32020,True,5,428.56,902,85.71
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,2,exp_seed_1,14233,True,5,1198.27,873,239.65
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,3,exp_seed_2,42412,True,5,1300.73,902,260.15
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,4,exp_seed_3,25250,True,5,799.93,604,159.99
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,5,exp_seed_4,14130,True,4,1250.27,806,312.57
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,6,exp_seed_5,32025,True,5,1222.72,902,244.54
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,7,exp_seed_6,50043,True,4,1216.68,530,304.17
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,8,exp_seed_7,41300,True,5,782.59,902,156.52
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,9,exp_seed_8,54543,True,5,419.61,902,83.92
+Board Scaling Analysis,Anytime Entropy (Expanded 5p/6c),"1.0s max turn budget, canonical first guess",5,6,True,10,exp_seed_9,32341,True,5,1262.56,870,252.51
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,1,exp_seed_0,4303,True,5,995.06,902,199.01
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,2,exp_seed_1,2534,True,4,1077.45,852,269.36
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,3,exp_seed_2,5251,True,5,1152.14,902,230.43
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,4,exp_seed_3,3737,True,5,1239.19,862,247.84
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,5,exp_seed_4,1514,True,5,581.82,902,116.36
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,6,exp_seed_5,4312,True,5,905.04,902,181.01
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,7,exp_seed_6,7006,True,5,606.85,902,121.37
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,8,exp_seed_7,5141,True,5,541.34,902,108.27
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,9,exp_seed_8,7565,True,5,1187.62,873,237.52
+Board Scaling Analysis,Anytime Entropy (Wide 4p/8c),"1.0s max turn budget, canonical first guess",4,8,True,10,exp_seed_9,4346,True,5,1171.58,870,234.32
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,1,exp_seed_0,37064,True,5,1406.05,859,281.21
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,2,exp_seed_1,52734,True,5,517.52,902,103.5
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,3,exp_seed_2,72413,True,5,1118.61,902,223.72
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,4,exp_seed_3,67130,True,5,1331.27,836,266.25
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,5,exp_seed_4,36514,True,6,1374.98,840,229.16
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,6,exp_seed_5,64172,True,5,1397.29,749,279.46
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,7,exp_seed_6,16042,True,6,1326.99,1202,221.16
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,8,exp_seed_7,37410,True,6,1354.51,904,225.75
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,9,exp_seed_8,25460,True,5,1533.95,746,306.79
+Board Scaling Analysis,Anytime Entropy (Distinct 5p/8c),"1.0s max turn budget, canonical first guess",5,8,False,10,exp_seed_9,62413,True,6,1306.28,1202,217.71
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,1,exp_seed_0,3202,True,5,73.67,359,14.73
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,2,exp_seed_1,1423,True,5,63.08,192,12.62
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,3,exp_seed_2,4241,True,5,71.26,288,14.25
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,4,exp_seed_3,2525,True,3,48.24,63,16.08
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,5,exp_seed_4,1413,True,5,68.26,399,13.65
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,6,exp_seed_5,3202,True,5,73.16,350,14.63
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,7,exp_seed_6,5004,True,5,66.67,426,13.33
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,8,exp_seed_7,4130,True,4,47.64,287,11.91
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,9,exp_seed_8,5454,True,4,51.15,168,12.79
+Search Budget Impact,Anytime Entropy (10ms limit),Strict timeout 10ms without canonical shortcut,4,6,True,10,exp_seed_9,3234,True,4,52.85,232,13.21
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,1,exp_seed_0,3202,True,5,184.3,671,36.86
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,2,exp_seed_1,1423,True,4,127.67,396,31.92
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,3,exp_seed_2,4241,True,4,160.98,398,40.25
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,4,exp_seed_3,2525,True,4,131.59,380,32.9
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,5,exp_seed_4,1413,True,5,167.29,716,33.46
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,6,exp_seed_5,3202,True,5,170.28,686,34.06
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,7,exp_seed_6,5004,True,4,130.5,395,32.62
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,8,exp_seed_7,4130,True,5,186.39,685,37.28
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,9,exp_seed_8,5454,True,4,144.98,519,36.25
+Search Budget Impact,Anytime Entropy (50ms limit),Strict timeout 50ms without canonical shortcut,4,6,True,10,exp_seed_9,3234,True,4,142.81,366,35.7
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,1,exp_seed_0,3202,True,5,391.81,657,78.36
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,2,exp_seed_1,1423,True,5,478.95,905,95.79
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,3,exp_seed_2,4241,True,6,536.6,875,89.43
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,4,exp_seed_3,2525,True,5,443.79,585,88.76
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,5,exp_seed_4,1413,True,5,452.74,927,90.55
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,6,exp_seed_5,3202,True,5,370.11,656,74.02
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,7,exp_seed_6,5004,True,4,369.49,657,92.37
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,8,exp_seed_7,4130,True,4,353.1,653,88.28
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,9,exp_seed_8,5454,True,3,229.75,353,76.58
+Search Budget Impact,Anytime Entropy (200ms limit),Strict timeout 200ms without canonical shortcut,4,6,True,10,exp_seed_9,3234,True,6,501.38,881,83.56
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,1,exp_seed_0,3202,True,5,1181.16,862,236.23
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,2,exp_seed_1,1423,True,4,1067.4,848,266.85
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,3,exp_seed_2,4241,True,6,1372.12,1160,228.69
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,4,exp_seed_3,2525,True,3,1173.78,847,391.26
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,5,exp_seed_4,1413,True,5,1275.11,1162,255.02
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,6,exp_seed_5,3202,True,5,1172.65,860,234.53
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,7,exp_seed_6,5004,True,5,1170.55,859,234.11
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,8,exp_seed_7,4130,True,5,1145.5,863,229.1
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,9,exp_seed_8,5454,True,4,1035.63,870,258.91
+Search Budget Impact,Anytime Entropy (1000ms limit),Strict timeout 1000ms without canonical shortcut,4,6,True,10,exp_seed_9,3234,True,6,1376.68,1143,229.45

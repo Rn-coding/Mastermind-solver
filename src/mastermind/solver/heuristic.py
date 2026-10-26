@@ -307,6 +307,10 @@ class PartitionHeuristic(BaseHeuristic):
         return -float(len(partitions))
 
 
+# Alias for literature naming
+MostPartsHeuristic = PartitionHeuristic
+
+
 @dataclass(frozen=True)
 class PartitionOutcome:
     """Feedback outcome details for partition distribution analysis."""

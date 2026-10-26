@@ -21,6 +21,7 @@ dev = [
 
 [project.scripts]
 mastermind = "mastermind.ui.app:main"
+mastermind-eval = "mastermind.experiments.runner:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
