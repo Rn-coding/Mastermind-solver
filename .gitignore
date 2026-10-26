@@ -22,7 +22,7 @@ env/
 .vscode/
 .idea/
 
-# Course-specific internal specifications (excluded from public GitHub repo)
+# Internal specifications
 AGENT.md
 ARCHITECTURE.md
 

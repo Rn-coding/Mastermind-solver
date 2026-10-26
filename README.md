@@ -16,7 +16,7 @@ An AI system and testbed for Mastermind exploring state-space search, belief-sta
 Requirements: Python 3.10+
 
 ```bash
-git clone https://github.com/rehan/mastermind-ai.git
+git clone https://github.com/Rn-coding/mastermind-ai.git
 cd mastermind-ai
 pip install -e .
 pip install pytest
