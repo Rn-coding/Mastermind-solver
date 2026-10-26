@@ -239,6 +239,24 @@ class MastermindApp:
                     obs = env.get_observation()
                     if obs.turn_number == 0 and ai_player._use_first_guess_canonical:
                         guess = ai_player.choose_guess(obs)
+                    elif belief_state.size <= 36:
+                        # Candidate pool is small: compute provably exact optimal move
+                        ai_player._budget.max_time_seconds = self.ai_timeline
+                        guess = ai_player.choose_guess(obs)
+                        while True:
+                            prompt_label = (
+                                f"[bold cyan]Turn {env.turn_number + 1}[/bold cyan] ([bold green]Exact Optimal Ready[/]) "
+                                f"Press Enter to play move (or 'eval', 'inspect', 'timeline <sec>', 'top', 'q')"
+                            )
+                            step = Prompt.ask(prompt_label, default="", console=self.console).strip()
+                            if not step:
+                                break
+                            if step.lower() in ("q", "quit", "exit"):
+                                self.console.print("[yellow]AI session aborted by user.[/yellow]")
+                                return False
+                            if self.handle_interactive_command(step, env, belief_state):
+                                continue
+                            self.console.print("[dim]Press Enter to proceed with AI move, or type 'help'[/dim]")
                     else:
                         cand_gen = CandidateGenerator(config)
                         guesses = cand_gen.generate_candidate_guesses(

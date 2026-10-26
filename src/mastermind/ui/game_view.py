@@ -114,9 +114,14 @@ def render_telemetry_panel(telemetry: SearchTelemetry) -> Panel:
         rows = []
         for rank, g in enumerate(telemetry.top_guesses[:3], 1):
             cand_badge = "[green](cand)[/]" if g.is_candidate else "[dim](non-cand)[/]"
+            score_metric = (
+                f"entropy: [bold cyan]{g.entropy_bits:.3f} bits[/]"
+                if "entropy" in telemetry.objective.lower()
+                else f"score: [bold cyan]{abs(g.score):.3f}[/]"
+            )
             rows.append(
                 f"  #{rank}: [bold]{g.guess}[/] {cand_badge} "
-                f"| score: [bold cyan]{g.score:.3f}[/] "
+                f"| {score_metric} "
                 f"| worst-case rem: [bold red]{g.worst_case_remaining}[/] "
                 f"| exp rem: [bold magenta]{g.expected_remaining:.2f}[/]"
             )
