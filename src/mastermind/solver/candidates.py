@@ -2,12 +2,23 @@
 
 from __future__ import annotations
 from enum import Enum
+import math
 import random
 from typing import List, Optional, Sequence, Tuple
 from mastermind.config import GameConfig
 from mastermind.observation import Code
 from mastermind.rules import generate_all_codes
 from mastermind.solver.belief_state import BeliefState
+
+MAX_EXPLICIT_SPACE = 50000
+
+
+def get_theoretical_space_size(config: GameConfig) -> int:
+    """Compute theoretical total code space size |G|."""
+    if config.allow_repeats:
+        return config.num_colors ** config.num_pegs
+    else:
+        return math.perm(config.num_colors, config.num_pegs)
 
 
 class GuessFilterPolicy(str, Enum):
@@ -23,7 +34,23 @@ class CandidateGenerator:
 
     def __init__(self, config: GameConfig) -> None:
         self._config = config
-        self._all_codes: Tuple[Code, ...] = tuple(generate_all_codes(config))
+        self._total_size = get_theoretical_space_size(config)
+        if self._total_size <= MAX_EXPLICIT_SPACE:
+            self._all_codes: Tuple[Code, ...] = tuple(generate_all_codes(config))
+        else:
+            # Memory guardrail for large state spaces: generate a sampled pool
+            rng = random.Random(config.seed or 42)
+            colors = list(range(config.num_colors))
+            sampled_set = set()
+            attempts = 0
+            while len(sampled_set) < 5000 and attempts < 20000:
+                attempts += 1
+                if config.allow_repeats:
+                    code = tuple(rng.choices(colors, k=config.num_pegs))
+                else:
+                    code = tuple(rng.sample(colors, k=config.num_pegs))
+                sampled_set.add(code)
+            self._all_codes = tuple(sampled_set)
 
     @property
     def all_codes(self) -> Tuple[Code, ...]:

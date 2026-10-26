@@ -11,7 +11,7 @@ from mastermind.solver.budget import SearchBudget
 from mastermind.solver.candidates import CandidateGenerator, GuessFilterPolicy
 from mastermind.solver.exact import ExactObjective, ExactPolicySolver, ExactSearchLimitExceeded
 from mastermind.solver.expectimax import BoundedExpectimaxSolver
-from mastermind.solver.heuristic import EntropyHeuristic, KnuthMinimaxHeuristic
+from mastermind.solver.heuristic import AnytimeEntropyHeuristic, EntropyHeuristic, KnuthMinimaxHeuristic
 from mastermind.telemetry import GuessScore, SearchTelemetry, SolverResult
 
 
@@ -131,23 +131,29 @@ class StrategySelector:
             except Exception:
                 pass
 
-        # 4. Large-instance sampled heuristic
+        # 4. Large-instance sampled heuristic with anytime entropy termination
         if "Sampled" in profile.recommended_strategy:
-            sample_size = min(150, self._budget.max_candidate_guesses or 150)
+            sample_size = min(300, self._budget.max_candidate_guesses or 300)
             sample_guesses = self._cand_gen.generate_candidate_guesses(
                 belief_state,
                 policy=GuessFilterPolicy.HYBRID_SAMPLED,
                 max_guesses=sample_size,
             )
-            heuristic = EntropyHeuristic()
+            heuristic = AnytimeEntropyHeuristic(
+                timeline_seconds=self._budget.max_time_seconds or 2.0,
+                max_memory_mb=self._budget.max_memory_mb or 512.0,
+            )
             return heuristic.select_best_guess(
                 sample_guesses,
                 belief_state,
                 max_time_seconds=self._budget.max_time_seconds,
             )
 
-        # 5. Default Standard 1-Ply Entropy Heuristic
-        heuristic = EntropyHeuristic()
+        # 5. Default Standard Anytime Entropy Heuristic
+        heuristic = AnytimeEntropyHeuristic(
+            timeline_seconds=self._budget.max_time_seconds or 2.0,
+            max_memory_mb=self._budget.max_memory_mb or 512.0,
+        )
         guesses = self._cand_gen.generate_candidate_guesses(
             belief_state,
             policy=GuessFilterPolicy.ALL_LEGAL_CODES,

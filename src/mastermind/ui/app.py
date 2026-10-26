@@ -12,13 +12,22 @@ from mastermind.environment import MastermindEnvironment
 from mastermind.players.ai import AIPlayer
 from mastermind.players.human import HumanPlayer
 from mastermind.setters.fixed import RandomFixedSetter
+from mastermind.solver.belief_state import BeliefState
+from mastermind.solver.budget import SearchBudget
+from mastermind.solver.candidates import CandidateGenerator, GuessFilterPolicy
+from mastermind.solver.heuristic import AnytimeEntropyHeuristic, analyze_guess_partitions
 from mastermind.ui.formatters import parse_guess_input
 from mastermind.ui.game_view import (
+    render_ai_hint,
     render_board,
+    render_candidate_inspection,
     render_color_legend,
+    render_detailed_guess_eval,
     render_header,
+    render_interactive_help,
     render_status,
     render_telemetry_panel,
+    render_top_guesses_table,
 )
 
 
@@ -35,6 +44,7 @@ class MastermindApp:
 
     def __init__(self, console: Optional[Console] = None) -> None:
         self.console = console or Console()
+        self.ai_timeline: float = 2.0
 
     def select_configuration(self) -> GameConfig:
         """Prompt user to select a preset configuration or build a custom one."""
@@ -71,29 +81,109 @@ class MastermindApp:
             self.console.print(f"[bold red]Configuration error:[/] {err}. Using Standard preset.")
             return PRESETS["1"][1]
 
-    def prompt_human_guess(self, env: MastermindEnvironment) -> Optional[Tuple[int, ...]]:
-        """Prompt user for a guess, allowing in-game commands like help or quit."""
+    def handle_interactive_command(
+        self,
+        cmd: str,
+        env: MastermindEnvironment,
+        belief_state: BeliefState,
+    ) -> bool:
+        """Process non-guess interactive commands like hint, eval, inspect, timeline.
+
+        Returns:
+            True if the command was recognized and handled, False otherwise.
+        """
+        parts = cmd.split(maxsplit=1)
+        action = parts[0].lower()
+        args = parts[1].strip() if len(parts) > 1 else ""
+        config = env.config
+
+        if action in ("?", "help"):
+            self.console.print(render_interactive_help())
+            self.console.print(render_color_legend(config))
+            return True
+
+        if action == "board":
+            self.console.print(render_board(env.get_observation()))
+            return True
+
+        if action in ("inspect", "state"):
+            self.console.print(render_candidate_inspection(belief_state, config))
+            return True
+
+        if action in ("hint", "h"):
+            with self.console.status(f"[bold yellow]AI evaluating belief state (timeline {self.ai_timeline:.1f}s)...[/bold yellow]"):
+                heuristic = AnytimeEntropyHeuristic(timeline_seconds=self.ai_timeline)
+                cand_gen = CandidateGenerator(config)
+                guesses = cand_gen.generate_candidate_guesses(belief_state)
+                result = heuristic.select_best_guess(guesses, belief_state)
+            self.console.print(render_ai_hint(result, config))
+            return True
+
+        if action == "eval":
+            if not args:
+                self.console.print("[bold red]Usage:[/] eval <guess> (e.g. 'eval 0 1 2 3' or 'eval R G B Y')")
+                return True
+            try:
+                eval_guess = parse_guess_input(args, config)
+                with self.console.status("[bold cyan]Computing feedback partition distribution and entropy...[/bold cyan]"):
+                    analysis = analyze_guess_partitions(eval_guess, belief_state)
+                self.console.print(render_detailed_guess_eval(analysis, config))
+            except ValueError as err:
+                self.console.print(f"[bold red]Cannot evaluate guess:[/] {err}")
+            return True
+
+        if action == "top":
+            count = 5
+            if args.isdigit():
+                count = max(1, min(20, int(args)))
+            with self.console.status(f"[bold cyan]Evaluating top {count} candidate guesses...[/bold cyan]"):
+                heuristic = AnytimeEntropyHeuristic(timeline_seconds=self.ai_timeline)
+                cand_gen = CandidateGenerator(config)
+                guesses = cand_gen.generate_candidate_guesses(belief_state)
+                res = heuristic.select_best_guess(guesses, belief_state)
+            self.console.print(render_top_guesses_table(res.telemetry.top_guesses[:count], config))
+            return True
+
+        if action in ("timeline", "budget"):
+            if not args:
+                self.console.print(f"[bold cyan]Current AI search timeline:[/] {self.ai_timeline:.1f} seconds per decision.")
+                return True
+            try:
+                new_time = float(args)
+                if new_time <= 0:
+                    self.console.print("[bold red]Timeline must be positive.[/bold red]")
+                else:
+                    self.ai_timeline = new_time
+                    self.console.print(f"[bold green]AI search timeline updated to {self.ai_timeline:.1f}s.[/bold green]")
+            except ValueError:
+                self.console.print("[bold red]Invalid number for timeline. Example: 'timeline 2.5'[/bold red]")
+            return True
+
+        return False
+
+    def prompt_human_guess(
+        self,
+        env: MastermindEnvironment,
+        belief_state: BeliefState,
+    ) -> Optional[Tuple[int, ...]]:
+        """Prompt user for a guess, handling interactive analysis commands."""
         obs = env.get_observation()
         config = obs.config
 
         while True:
             prompt_label = (
                 f"[bold cyan]Turn {obs.turn_number + 1}[/bold cyan] "
-                f"Enter {config.num_pegs} pegs (or '?' for help, 'quit' to exit)"
+                f"Enter {config.num_pegs} pegs (or 'hint', 'eval', 'inspect', 'help', 'q')"
             )
             raw = Prompt.ask(prompt_label, console=self.console).strip()
 
             if not raw:
                 continue
 
-            cmd = raw.lower()
-            if cmd in ("quit", "exit", "q"):
+            if raw.lower() in ("quit", "exit", "q"):
                 return None
-            if cmd in ("?", "help"):
-                self.console.print(render_color_legend(config))
-                continue
-            if cmd == "board":
-                self.console.print(render_board(obs))
+
+            if self.handle_interactive_command(raw, env, belief_state):
                 continue
 
             try:
@@ -101,7 +191,7 @@ class MastermindApp:
                 return guess
             except ValueError as err:
                 self.console.print(f"[bold red]Invalid guess:[/] {err}")
-                self.console.print("[dim]Tip: Use integers (e.g. '0 1 2 3') or letters (e.g. 'R G B Y')[/dim]")
+                self.console.print("[dim]Tip: Use integers (e.g. '0 1 2 3') or letters (e.g. 'R G B Y'), or 'hint' for advice[/dim]")
 
     def select_game_mode(self) -> str:
         """Prompt user to select between Human play, AI autoplay, or AI step-mode."""
@@ -125,10 +215,14 @@ class MastermindApp:
 
         setter = RandomFixedSetter(seed=config.seed)
         env = MastermindEnvironment(config=config, setter=setter)
+        belief_state = BeliefState(config)
 
         ai_player: Optional[AIPlayer] = None
         if mode in ("2", "3"):
-            ai_player = AIPlayer(use_strategy_selector=True)
+            ai_player = AIPlayer(
+                use_strategy_selector=True,
+                budget=SearchBudget(max_time_seconds=self.ai_timeline),
+            )
 
         self.console.clear()
         self.console.print(render_header(config))
@@ -138,27 +232,36 @@ class MastermindApp:
         while not env.is_terminal:
             if ai_player is not None:
                 if mode == "3":
-                    step = Prompt.ask(
-                        f"\n[bold cyan]Turn {env.turn_number + 1}[/bold cyan] Press Enter to execute AI turn (or 'q' to abort)",
-                        default="",
-                        console=self.console,
-                    ).strip().lower()
-                    if step in ("q", "quit", "exit"):
-                        self.console.print("[yellow]AI session aborted by user.[/yellow]")
-                        break
+                    while True:
+                        prompt_label = (
+                            f"\n[bold cyan]Turn {env.turn_number + 1}[/bold cyan] "
+                            f"Press Enter for AI move (or 'eval', 'inspect', 'timeline <sec>', 'top', 'q')"
+                        )
+                        step = Prompt.ask(prompt_label, default="", console=self.console).strip()
+                        if not step:
+                            break
+                        if step.lower() in ("q", "quit", "exit"):
+                            self.console.print("[yellow]AI session aborted by user.[/yellow]")
+                            return False
+                        if self.handle_interactive_command(step, env, belief_state):
+                            # Ensure AI player budget reflects any timeline change
+                            ai_player._budget.max_time_seconds = self.ai_timeline
+                            continue
+                        self.console.print("[dim]Press Enter to proceed with AI move, or type 'help'[/dim]")
                 else:
-                    time.sleep(0.5)
+                    time.sleep(0.4)
 
                 obs = env.get_observation()
                 guess = ai_player.choose_guess(obs)
             else:
-                guess = self.prompt_human_guess(env)
+                guess = self.prompt_human_guess(env, belief_state)
                 if guess is None:
                     self.console.print("[yellow]Game aborted by player.[/yellow]")
                     break
 
             result = env.submit_guess(guess)
             obs = env.get_observation()
+            belief_state.update_from_observation(obs)
 
             self.console.clear()
             self.console.print(render_header(config))

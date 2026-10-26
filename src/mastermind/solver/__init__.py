@@ -6,10 +6,14 @@ from mastermind.solver.candidates import CandidateGenerator, GuessFilterPolicy
 from mastermind.solver.exact import ExactObjective, ExactPolicySolver
 from mastermind.solver.expectimax import BoundedExpectimaxSolver
 from mastermind.solver.heuristic import (
+    AnytimeEntropyHeuristic,
+    DetailedGuessAnalysis,
     EntropyHeuristic,
     ExpectedSizeHeuristic,
     KnuthMinimaxHeuristic,
     PartitionHeuristic,
+    PartitionOutcome,
+    analyze_guess_partitions,
 )
 from mastermind.solver.strategy_selector import StrategySelector, WorkloadProfile
 
@@ -23,6 +27,10 @@ __all__ = [
     "BoundedExpectimaxSolver",
     "StrategySelector",
     "WorkloadProfile",
+    "AnytimeEntropyHeuristic",
+    "DetailedGuessAnalysis",
+    "PartitionOutcome",
+    "analyze_guess_partitions",
     "EntropyHeuristic",
     "ExpectedSizeHeuristic",
     "KnuthMinimaxHeuristic",
