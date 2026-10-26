@@ -2,7 +2,13 @@
 
 from mastermind.ui.app import MastermindApp, main
 from mastermind.ui.formatters import format_code, format_feedback, format_peg, parse_guess_input
-from mastermind.ui.game_view import render_board, render_color_legend, render_header, render_status
+from mastermind.ui.game_view import (
+    render_board,
+    render_color_legend,
+    render_header,
+    render_status,
+    render_telemetry_panel,
+)
 
 __all__ = [
     "MastermindApp",
@@ -15,4 +21,5 @@ __all__ = [
     "render_color_legend",
     "render_header",
     "render_status",
+    "render_telemetry_panel",
 ]

@@ -10,6 +10,7 @@ from rich import box
 
 from mastermind.config import GameConfig
 from mastermind.observation import Code, Observation
+from mastermind.telemetry import SearchTelemetry
 from mastermind.ui.formatters import format_code, format_feedback, format_peg
 
 
@@ -90,6 +91,40 @@ def render_board(observation: Observation) -> Table:
             )
 
     return table
+
+
+def render_telemetry_panel(telemetry: SearchTelemetry) -> Panel:
+    """Render a clean telemetry panel displaying solver metrics and reasoning."""
+    stats = (
+        f"[bold cyan]Algorithm:[/] {telemetry.method_name}  |  "
+        f"[bold cyan]Objective:[/] {telemetry.objective}\n"
+        f"[bold]Candidates:[/] [bold yellow]{telemetry.initial_candidates_count}[/]  |  "
+        f"[bold]Guesses Evaluated:[/] [bold yellow]{telemetry.guesses_considered_count}[/]  |  "
+        f"[bold]Nodes:[/] [bold yellow]{telemetry.nodes_evaluated}[/]  |  "
+        f"[bold]Latency:[/] [bold green]{telemetry.elapsed_time_ms:.2f} ms[/]\n"
+        f"[bold]Status:[/] {'[bold green]Exact Optimal[/]' if telemetry.is_exact else '[bold yellow]Heuristic/Approx[/]'}  |  "
+        f"[bold]Reason:[/] [dim]{telemetry.stopping_reason}[/dim]"
+    )
+
+    top_text = ""
+    if telemetry.top_guesses:
+        rows = []
+        for rank, g in enumerate(telemetry.top_guesses[:3], 1):
+            cand_badge = "[green](cand)[/]" if g.is_candidate else "[dim](non-cand)[/]"
+            rows.append(
+                f"  #{rank}: [bold]{g.guess}[/] {cand_badge} "
+                f"| score: [bold cyan]{g.score:.3f}[/] "
+                f"| worst-case rem: [bold red]{g.worst_case_remaining}[/] "
+                f"| exp rem: [bold magenta]{g.expected_remaining:.2f}[/]"
+            )
+        top_text = "\n[bold bright_white]Top Considered Guesses:[/bold bright_white]\n" + "\n".join(rows)
+
+    return Panel(
+        Text.from_markup(f"{stats}{top_text}"),
+        title="[bold bright_magenta]AI Solver Telemetry & Search Reasoning[/bold bright_magenta]",
+        box=box.ROUNDED,
+        style="bright_magenta",
+    )
 
 
 def render_status(observation: Observation, secret: Optional[Code] = None) -> Panel:

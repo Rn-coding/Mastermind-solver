@@ -12,7 +12,14 @@ from mastermind.ui.formatters import (
     get_color_theme,
     parse_guess_input,
 )
-from mastermind.ui.game_view import render_board, render_color_legend, render_header, render_status
+from mastermind.ui.game_view import (
+    render_board,
+    render_color_legend,
+    render_header,
+    render_status,
+    render_telemetry_panel,
+)
+from mastermind.telemetry import GuessScore, SearchTelemetry
 
 
 class TestUIFormatters:
@@ -165,3 +172,28 @@ class TestGameViewRendering:
         console.print(panel_lost)
         output = console.export_text()
         assert "GAME OVER" in output
+
+    def test_render_telemetry_panel(self):
+        telemetry = SearchTelemetry(
+            method_name="Shannon Entropy",
+            objective="maximize_entropy",
+            initial_candidates_count=1296,
+            guesses_considered_count=1296,
+            nodes_evaluated=1296,
+            max_depth_reached=1,
+            elapsed_time_ms=45.2,
+            is_exact=False,
+            is_budget_exhausted=False,
+            stopping_reason="Complete",
+            best_score=-5.5,
+            top_guesses=(
+                GuessScore((0, 0, 1, 2), -5.5, False, 168, 55.4, 5.5, 14),
+            ),
+        )
+        panel = render_telemetry_panel(telemetry)
+        console = Console(record=True, width=100)
+        console.print(panel)
+        output = console.export_text()
+        assert "Shannon Entropy" in output
+        assert "1296" in output
+        assert "45.20 ms" in output

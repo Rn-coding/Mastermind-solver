@@ -2,16 +2,24 @@
 
 from __future__ import annotations
 import sys
+import time
 from typing import Optional, Tuple
 from rich.console import Console
 from rich.prompt import Confirm, IntPrompt, Prompt
 
 from mastermind.config import GameConfig
 from mastermind.environment import MastermindEnvironment
+from mastermind.players.ai import AIPlayer
 from mastermind.players.human import HumanPlayer
 from mastermind.setters.fixed import RandomFixedSetter
 from mastermind.ui.formatters import parse_guess_input
-from mastermind.ui.game_view import render_board, render_color_legend, render_header, render_status
+from mastermind.ui.game_view import (
+    render_board,
+    render_color_legend,
+    render_header,
+    render_status,
+    render_telemetry_panel,
+)
 
 
 PRESETS = {
@@ -95,17 +103,32 @@ class MastermindApp:
                 self.console.print(f"[bold red]Invalid guess:[/] {err}")
                 self.console.print("[dim]Tip: Use integers (e.g. '0 1 2 3') or letters (e.g. 'R G B Y')[/dim]")
 
+    def select_game_mode(self) -> str:
+        """Prompt user to select between Human play, AI autoplay, or AI step-mode."""
+        self.console.print("\n[bold bright_cyan]Select Gameplay Mode:[/bold bright_cyan]")
+        self.console.print("  [bold yellow]1[/bold yellow]: Human Player (Crack the code yourself)")
+        self.console.print("  [bold yellow]2[/bold yellow]: AI Autoplay (Watch adaptive AI solve the code)")
+        self.console.print("  [bold yellow]3[/bold yellow]: AI Step-by-Step (Inspect AI decision telemetry each turn)")
+
+        return Prompt.ask("Choose mode", choices=["1", "2", "3"], default="1", console=self.console)
+
     def play_game(self, config: Optional[GameConfig] = None) -> bool:
         """Run a single game match to completion.
 
         Returns:
             True if the player wants to play another game, False to exit.
         """
+        mode = self.select_game_mode()
+
         if config is None:
             config = self.select_configuration()
 
         setter = RandomFixedSetter(seed=config.seed)
         env = MastermindEnvironment(config=config, setter=setter)
+
+        ai_player: Optional[AIPlayer] = None
+        if mode in ("2", "3"):
+            ai_player = AIPlayer(use_strategy_selector=True)
 
         self.console.clear()
         self.console.print(render_header(config))
@@ -113,10 +136,26 @@ class MastermindApp:
         self.console.print(render_board(env.get_observation()))
 
         while not env.is_terminal:
-            guess = self.prompt_human_guess(env)
-            if guess is None:
-                self.console.print("[yellow]Game aborted by player.[/yellow]")
-                break
+            if ai_player is not None:
+                if mode == "3":
+                    step = Prompt.ask(
+                        f"\n[bold cyan]Turn {env.turn_number + 1}[/bold cyan] Press Enter to execute AI turn (or 'q' to abort)",
+                        default="",
+                        console=self.console,
+                    ).strip().lower()
+                    if step in ("q", "quit", "exit"):
+                        self.console.print("[yellow]AI session aborted by user.[/yellow]")
+                        break
+                else:
+                    time.sleep(0.5)
+
+                obs = env.get_observation()
+                guess = ai_player.choose_guess(obs)
+            else:
+                guess = self.prompt_human_guess(env)
+                if guess is None:
+                    self.console.print("[yellow]Game aborted by player.[/yellow]")
+                    break
 
             result = env.submit_guess(guess)
             obs = env.get_observation()
@@ -125,6 +164,11 @@ class MastermindApp:
             self.console.print(render_header(config))
             self.console.print(render_color_legend(config))
             self.console.print(render_board(obs))
+
+            # Display AI Telemetry if available
+            if ai_player and ai_player.last_result:
+                self.console.print(render_telemetry_panel(ai_player.last_result.telemetry))
+
             self.console.print(render_status(obs, secret=env.reveal_secret() if obs.is_terminal else None))
 
         # Game ended
