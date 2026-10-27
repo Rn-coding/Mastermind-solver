@@ -331,9 +331,14 @@ class ExperimentRunner:
         seeds: Sequence[Union[int, str]],
         config: Optional[GameConfig] = None,
     ) -> List[ExperimentSummary]:
-        """Analyze the impact of search deadlines on guess count and node expansion."""
+        """Analyze the impact of search deadlines on guess count and node expansion.
+
+        Uses canonical first guess on all budget levels so that deadline is the
+        only variable — differences in turn 1 choice do not confound the results.
+        """
         cfg = config or GameConfig(num_pegs=4, num_colors=6, allow_repeats=True)
-        time_budgets = [0.01, 0.05, 0.20, 1.00]
+        # Extended budget range: from barely-feasible to unconstrained
+        time_budgets = [0.01, 0.05, 0.20, 0.50, 1.00]
         summaries: List[ExperimentSummary] = []
 
         with Progress(
@@ -353,10 +358,10 @@ class ExperimentRunner:
                         name=f"Anytime Entropy ({b*1000:.0f}ms)",
                         heuristic=AnytimeEntropyHeuristic(),
                         budget=SearchBudget(max_time_seconds=b),
-                        use_first_guess_canonical=False,
+                        use_first_guess_canonical=True,
                     ),
                     strategy_name=f"Anytime Entropy ({t_budget*1000:.0f}ms limit)",
-                    budget_description=f"Strict timeout {t_budget*1000:.0f}ms without canonical shortcut",
+                    budget_description=f"Anytime entropy with {t_budget*1000:.0f}ms per-turn deadline, canonical first guess",
                     seeds=seeds,
                     on_progress=lambda current, total: progress.update(task_id, completed=current),
                 )
